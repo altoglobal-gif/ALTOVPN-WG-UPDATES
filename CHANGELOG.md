@@ -1,5 +1,23 @@
 # Changelog
 
+## V.2026.26.0.7 - 2026-06-23
+
+### Added
+
+- Restored visible update status in the ALTOVPN-WG WebView2 client header.
+- Restored the Changelog view in Settings with release-note links.
+- Added an explicit Install Update action so Check Update can show availability before installation.
+
+### Fixed
+
+- Check Update no longer silently downloads and schedules installation before showing update state.
+- Update metadata remains visible after a download completes or installation is deferred.
+- GitHub manifest fallback reads decoded contents correctly when curl.exe is used.
+
+### Security
+
+- Update metadata points to the SHA256-verified `ALTOVPN-WG-V.2026.26.0.7-win-x64.msi` installer.
+
 ## V.2026.26.0.6 - 2026-06-23
 
 ### Added
