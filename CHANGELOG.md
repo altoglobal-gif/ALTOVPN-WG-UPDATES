@@ -1,5 +1,23 @@
 # Changelog
 
+## V.2026.26.0.8 - 2026-06-23
+
+### Changed
+
+- Published a migration MSI that keeps the displayed app version as `V.2026.26.0.8` while using MSI `ProductVersion` `226.26.8`.
+- This migration build allows machines with earlier `2026.26.0.x` MSI product-version registrations to remove the old package before installing the new package.
+
+### Fixed
+
+- Restored visible update status in the ALTOVPN-WG WebView2 client header.
+- Restored the Changelog view in Settings with release-note links.
+- Added an explicit Install Update action so Check Update can show availability before installation.
+- GitHub manifest fallback reads decoded contents correctly when curl.exe is used.
+
+### Security
+
+- Update metadata points to the SHA256-verified `ALTOVPN-WG-V.2026.26.0.8-win-x64.msi` installer.
+
 ## V.2026.26.0.7 - 2026-06-23
 
 ### Added
