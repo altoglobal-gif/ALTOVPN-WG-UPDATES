@@ -1,5 +1,23 @@
 # Changelog
 
+## V.2026.26.1.0 - 2026-06-23
+
+### Major
+
+- Promoted this release to the `2026.26.1.x` major line for production VPN client improvements.
+- Added functional Tray Settings actions for auto-disconnect modes, selected-profile diagnose/reconnect, diagnostics export, update check, and app restart.
+- Added exit confirmation when quitting ALTOVPN-WG from the tray.
+- Added WireGuard import validation and preview before saving imported `.conf` profiles.
+- Added redacted diagnostic bundle export for support/debug workflows.
+- Added DNS, route, tunnel mode, latest handshake, runtime endpoint, latency, and auto reconnect health details.
+- Added tray notifications for connect/disconnect, reconnect, update restart required, and VPN health warnings.
+- Added user-friendly error mapping for common WireGuard/helper/config/update failures.
+
+### Security
+
+- Diagnostic bundle export redacts private and preshared keys before writing reports.
+- Update metadata points to the SHA256-verified `ALTOVPN-WG-V.2026.26.1.0-win-x64.msi` installer.
+
 ## V.2026.26.0.9 - 2026-06-23
 
 ### Fixed
