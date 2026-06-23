@@ -1,5 +1,24 @@
 # Changelog
 
+## V.2026.26.1.1 - 2026-06-23
+
+### Fixed
+
+- Fixed update installation false failures by allowing the desktop client to wait longer for helper MSI SHA256 verification.
+- Kept helper-side update validation synchronous so `Installer scheduled` is only returned after path and hash checks pass.
+- Reduced machine-freeze risk by running DNS and route diagnostics only during manual Diagnose or forced health refresh instead of every health poll.
+- Reduced reconnect churn by limiting automatic reconnect to inactive tunnels and network-change recovery; stale/no-handshake states now warn without restarting the tunnel.
+- Switched the helper pipe ACL package from preview to stable `System.IO.Pipes.AccessControl` `5.0.0`.
+
+### Changed
+
+- Published the compact Tray Settings and Connection Detail UI cleanup in the update channel.
+- Preserved the intentional admin passcode workflow.
+
+### Security
+
+- Update metadata points to the SHA256-verified `ALTOVPN-WG-V.2026.26.1.1-win-x64.msi` installer.
+
 ## V.2026.26.1.0 - 2026-06-23
 
 ### Major
