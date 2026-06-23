@@ -1,5 +1,16 @@
 # Changelog
 
+## V.2026.26.0.9 - 2026-06-23
+
+### Fixed
+
+- Removed the duplicate Check Update button from the Changelog modal.
+- Fixed Open Release Notes in the WebView2 client by routing the action through the native host and default browser.
+
+### Security
+
+- Update metadata points to the SHA256-verified `ALTOVPN-WG-V.2026.26.0.9-win-x64.msi` installer.
+
 ## V.2026.26.0.8 - 2026-06-23
 
 ### Changed
