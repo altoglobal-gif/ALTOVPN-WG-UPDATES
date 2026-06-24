@@ -1,5 +1,17 @@
 # Changelog
 
+## V.2026.26.1.2 - 2026-06-24
+
+### Fixed
+
+- Fixed the Windows tray icon falling back to the default application icon when the external icon asset cannot be resolved at runtime; the app now falls back to the embedded executable icon before using a system fallback.
+- Clarified Tray Panel actions with more explicit labels and tooltips for opening the app, connecting the selected profile, Quick Connect, emergency Kill VPN, public-key copy, and window show/hide behavior.
+- Improved Tray Panel selected-profile status copy so disconnected profiles clearly point users to the Connect selected action.
+
+### Security
+
+- Update metadata points to the SHA256-verified `ALTOVPN-WG-V.2026.26.1.2-win-x64.msi` installer.
+
 ## V.2026.26.1.1 - 2026-06-23
 
 ### Fixed
