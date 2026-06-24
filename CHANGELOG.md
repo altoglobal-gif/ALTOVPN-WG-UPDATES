@@ -1,5 +1,20 @@
 # Changelog
 
+## V.2026.26.1.3 - 2026-06-24
+
+### Fixed
+
+- Clarified Tray Panel connection state by tying the header status to the selected profile instead of the global active-tunnel count.
+- Made connected profiles visually obvious in the Tray Panel profile list with a stronger row highlight, green border, larger status dot, and `CONNECTED` badge.
+- Fixed Tray Panel refresh causing profile selection to jump during live state updates.
+- Fixed Tray Panel Reconnect being available for disconnected profiles; reconnect is now limited to already-connected profiles and no longer starts an extra tunnel.
+- Replaced the low-value bottom `Public Key` quick tile with `Diagnose / Health` for selected-profile diagnostics.
+- Kept the tray icon on the ALTOVPN-WG icon by falling back to the executable icon if the runtime asset path cannot be resolved.
+
+### Security
+
+- Update metadata points to the SHA256-verified `ALTOVPN-WG-V.2026.26.1.3-win-x64.msi` installer.
+
 ## V.2026.26.1.2 - 2026-06-24
 
 ### Fixed
