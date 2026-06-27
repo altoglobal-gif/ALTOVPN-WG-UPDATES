@@ -1,5 +1,17 @@
 # Changelog
 
+## V.2026.26.2.2 - 2026-06-27
+
+### Fixed
+
+- Fixed the modern setup executable failing to open because WPF UI assets were packaged as external content instead of embedded resources.
+- Embedded the installer icon and brand images into the WPF assembly so the single-file setup can start without sidecar files.
+
+### Verification
+
+- Opened the setup executable locally for 5 seconds without an immediate crash.
+- Checked Windows Application event log after launch and found no new setup crash events.
+
 ## V.2026.26.2.1 - 2026-06-27
 
 ### Fixed
