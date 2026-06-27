@@ -2,20 +2,20 @@
     "schemaVersion":  1,
     "appId":  "ALTOVPN-WG",
     "channel":  "stable",
-    "latestVersion":  "V.2026.26.1.7",
-    "fileVersion":  "2026.26.1.7",
+    "latestVersion":  "V.2026.26.1.8",
+    "fileVersion":  "2026.26.1.8",
     "minimumSupportedVersion":  "V.2026.25.0.0",
-    "publishedAt":  "2026-06-27T10:47:25+07:00",
-    "releaseNotesUrl":  "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/blob/main/RELEASE_NOTES_v2026.26.1.7.md",
+    "publishedAt":  "2026-06-27T11:05:18+07:00",
+    "releaseNotesUrl":  "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/blob/main/RELEASE_NOTES_v2026.26.1.8.md",
     "manifestUrl":  "https://api.github.com/repos/altoglobal-gif/ALTOVPN-WG-UPDATES/contents/latest.json?ref=main",
     "artifact":  {
                      "type":  "msi",
                      "component":  "desktop-client",
                      "platform":  "win-x64",
-                     "fileName":  "ALTOVPN-WG-V.2026.26.1.7-win-x64.msi",
-                     "downloadUrl":  "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/raw/main/releases/v2026.26.1.7/ALTOVPN-WG-V.2026.26.1.7-win-x64.msi",
-                     "sha256":  "08AC84D07AB14A6AE6C32ED096919D19A0ED2B7506DA25E3CA926D7EDD70D3CA",
-                     "sizeBytes":  96944128
+                     "fileName":  "ALTOVPN-WG-V.2026.26.1.8-win-x64.msi",
+                     "downloadUrl":  "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/raw/main/releases/v2026.26.1.8/ALTOVPN-WG-V.2026.26.1.8-win-x64.msi",
+                     "sha256":  "77EF67E2E5770EB3E8F4C9668353F97057C014D2B4A2822E6462794D7FB586CE",
+                     "sizeBytes":  96788480
                  },
     "updatePolicy":  {
                          "requiresAdmin":  true,
@@ -24,6 +24,6 @@
                      },
     "source":  {
                    "repository":  "altoglobal-gif/ALTOVPN-WG-UPDATES",
-                   "tag":  "v2026.26.1.7"
+                   "tag":  "v2026.26.1.8"
                }
 }

@@ -1,5 +1,16 @@
 # Changelog
 
+## V.2026.26.1.8 - 2026-06-27
+
+### Fixed
+
+- Fixed installer readability on Welcome, Interrupted, Error, and other WixUI dialogs by replacing the dark content panel with a light panel.
+- Normalized MSI text controls to project text styles so titles and descriptions remain readable across installer states.
+
+### Release
+
+- Update metadata points to the SHA256-verified `ALTOVPN-WG-V.2026.26.1.8-win-x64.msi` installer.
+
 ## V.2026.26.1.7 - 2026-06-27
 
 ### Fixed
