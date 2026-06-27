@@ -8,7 +8,7 @@ This repository is intentionally separate from the application source tree so th
 
 - Channel: `stable`
 - Manifest: `latest.json`
-- Latest version: `V.2026.26.1.1`
+- Latest version: `V.2026.26.1.6`
 - Minimum supported client: `V.2026.25.0.0`
 - Artifact type: `msi` for this release; `webapp-patch` remains supported for UI-only updates
 
@@ -41,3 +41,10 @@ Restart ALTOVPN-WG after applying an update so WebView2 reloads the updated appl
 5. Add release notes for the version.
 6. Commit and push this repository.
 7. Verify the raw `latest.json` URL and artifact URL return HTTP 200.
+
+## Publishing Rules
+
+- Publish application source changes in the original source repository before publishing this update repository.
+- Keep `latest.json` aligned with the built artifact: version, file name, download URL, SHA256, size, release notes URL, and tag must all describe the same release.
+- Do not use local-only `Updater/latest.json` changes as a real release; installed clients read the GitHub update repository by default.
+- For MSI updates, preserve the helper install path: client downloads and verifies the MSI, then `AltoVpnWgHelper` verifies SHA256 again before running `msiexec`.

@@ -1,5 +1,24 @@
 # Changelog
 
+## V.2026.26.1.6 - 2026-06-27
+
+### Fixed
+
+- Aligned MSI build parameters with host and helper binary versions so published artifacts do not report stale app versions.
+- Patched installer dialog text styles across dark-background dialogs to avoid black text on black backgrounds.
+- Added helper response timeouts to prevent privileged operations from hanging indefinitely after a pipe connection succeeds.
+- Cleared stale update availability state when update checks fail.
+- Re-enabled the Connect/Disconnect action after native bridge command timeouts.
+
+### Changed
+
+- Reduced connect/disconnect wait time and moved manager status refresh to the background after tunnel toggles.
+- Update install scheduling now starts `msiexec` immediately and returns the installer PID/log path after SHA256 verification.
+
+### Release
+
+- Update metadata points to the SHA256-verified `ALTOVPN-WG-V.2026.26.1.6-win-x64.msi` installer.
+
 ## V.2026.26.1.5 - 2026-06-24
 
 ### Fixed
