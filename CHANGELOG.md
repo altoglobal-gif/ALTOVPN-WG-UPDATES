@@ -1,5 +1,18 @@
 # Changelog
 
+## V.2026.26.1.7 - 2026-06-27
+
+### Fixed
+
+- Prevented MSI/full desktop update installation from starting while any VPN tunnel is connected.
+- Kept active VPN sessions and the helper service online by pausing before helper/MSI installation when connected profiles exist.
+- Allowed non-helper web UI patch updates to remain eligible while connected.
+- Left the update available after a protected-session pause so users can install later during a maintenance window.
+
+### Release
+
+- Update metadata points to the SHA256-verified `ALTOVPN-WG-V.2026.26.1.7-win-x64.msi` installer.
+
 ## V.2026.26.1.6 - 2026-06-27
 
 ### Fixed
