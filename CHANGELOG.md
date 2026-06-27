@@ -1,5 +1,17 @@
 # Changelog
 
+## V.2026.26.2.1 - 2026-06-27
+
+### Fixed
+
+- Preserved the running `AltoVpnWgHelper` service during modern installer updates when the helper binary hash is unchanged.
+- The modern installer now stops and recreates the helper service only when the helper payload is actually updated or missing.
+
+### Release
+
+- Published the custom modern `.exe` setup package as a GitHub Release asset because it is larger than the git blob limit.
+- The in-app update channel remains on MSI artifacts until deployed clients can safely consume installer-exe artifacts.
+
 ## V.2026.26.2.0 - 2026-06-27
 
 ### Added
