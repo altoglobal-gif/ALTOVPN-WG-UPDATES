@@ -8,7 +8,7 @@ This repository is intentionally separate from the application source tree so th
 
 - Channel: `stable`
 - Manifest: `latest.json`
-- Latest version: `V.2026.26.1.9`
+- Latest version: `V.2026.26.2.2`
 - Minimum supported client: `V.2026.25.0.0`
 - Artifact type: `msi` for this release; `webapp-patch` remains supported for UI-only updates
 
@@ -16,7 +16,7 @@ This repository is intentionally separate from the application source tree so th
 
 ALTOVPN-WG reads `latest.json`, compares the installed version, downloads the listed artifact, verifies file size and SHA256, then asks the local `AltoVpnWgHelper` service to apply the update.
 
-Full desktop releases use an MSI artifact and are installed by the helper service through `msiexec` because native host, tray, service, or bridge code changed.
+Full desktop releases may use an MSI artifact or the modern installer `.exe` artifact. MSI artifacts are installed through `msiexec`; modern installer artifacts are installed by the helper service with `--quiet`.
 
 UI-only releases may use a ZIP `webapp-patch` artifact. Patch artifacts may only contain files under:
 
@@ -47,4 +47,4 @@ Restart ALTOVPN-WG after applying an update so WebView2 reloads the updated appl
 - Publish application source changes in the original source repository before publishing this update repository.
 - Keep `latest.json` aligned with the built artifact: version, file name, download URL, SHA256, size, release notes URL, and tag must all describe the same release.
 - Do not use local-only `Updater/latest.json` changes as a real release; installed clients read the GitHub update repository by default.
-- For MSI updates, preserve the helper install path: client downloads and verifies the MSI, then `AltoVpnWgHelper` verifies SHA256 again before running `msiexec`.
+- For full installer updates, preserve the helper install path: client downloads and verifies the artifact, then `AltoVpnWgHelper` verifies SHA256 again before running `msiexec` for MSI or `--quiet` for the modern installer EXE.

@@ -2,28 +2,28 @@
     "schemaVersion":  1,
     "appId":  "ALTOVPN-WG",
     "channel":  "stable",
-    "latestVersion":  "V.2026.26.1.9",
-    "fileVersion":  "2026.26.1.9",
-    "minimumSupportedVersion":  "V.2026.25.0.0",
-    "publishedAt":  "2026-06-27T11:16:28+07:00",
-    "releaseNotesUrl":  "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/blob/main/RELEASE_NOTES_v2026.26.1.9.md",
+    "latestVersion":  "V.2026.26.2.2",
+    "fileVersion":  "2026.26.2.2",
+    "minimumSupportedVersion":  "V.2026.26.2.2",
+    "publishedAt":  "2026-06-27T13:30:00+07:00",
+    "releaseNotesUrl":  "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/blob/main/RELEASE_NOTES_v2026.26.2.2.md",
     "manifestUrl":  "https://api.github.com/repos/altoglobal-gif/ALTOVPN-WG-UPDATES/contents/latest.json?ref=main",
     "artifact":  {
-                     "type":  "msi",
+                     "type":  "installer-exe",
                      "component":  "desktop-client",
                      "platform":  "win-x64",
-                     "fileName":  "ALTOVPN-WG-V.2026.26.1.9-win-x64.msi",
-                     "downloadUrl":  "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/raw/main/releases/v2026.26.1.9/ALTOVPN-WG-V.2026.26.1.9-win-x64.msi",
-                     "sha256":  "3C77CCD6C6139FD0A26970B27DE01586F4DE7F1CEB1872948B7D30A7894353EC",
-                     "sizeBytes":  96763904
+                     "fileName":  "ALTOVPN-WG-V.2026.26.2.2-win-x64-setup.exe",
+                     "downloadUrl":  "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/download/v2026.26.2.2-modern-installer/ALTOVPN-WG-V.2026.26.2.2-win-x64-setup.exe",
+                     "sha256":  "028A9E157D1EF58B15A608459342997801BBD26BCE92A5BCAA57C841FBB4280D",
+                     "sizeBytes":  172210511
                  },
     "updatePolicy":  {
                          "requiresAdmin":  true,
-                         "installMode":  "helper-msi",
+                         "installMode":  "helper-installer-exe",
                          "restartRequired":  true
                      },
     "source":  {
                    "repository":  "altoglobal-gif/ALTOVPN-WG-UPDATES",
-                   "tag":  "v2026.26.1.9"
+                   "tag":  "v2026.26.2.2-modern-installer"
                }
 }
