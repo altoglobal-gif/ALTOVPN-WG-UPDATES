@@ -1,5 +1,17 @@
 # Changelog
 
+## V.2026.26.2.0 - 2026-06-27
+
+### Added
+
+- Added a custom .NET/WPF modern setup experience for ALTOVPN-WG.
+- Published a manual `.exe` setup package that is not WiX MSI and not MSIX.
+- The setup package installs the app payload, registers `AltoVpnWgHelper`, creates shortcuts, and registers an uninstall entry.
+
+### Compatibility
+
+- The in-app update channel remains on MSI artifacts until deployed clients have installer-exe updater support.
+
 ## V.2026.26.1.9 - 2026-06-27
 
 ### Changed
