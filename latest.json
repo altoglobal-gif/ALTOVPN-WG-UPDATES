@@ -13,7 +13,7 @@
                      "component":  "desktop-client",
                      "platform":  "win-x64",
                      "fileName":  "ALTOVPN-WG-V.2026.28.0.1-win-x64-setup.exe",
-                     "downloadUrl":  "https://raw.githubusercontent.com/altoglobal-gif/ALTOVPN-WG-UPDATES/main/releases/v2026.28.0.1/ALTOVPN-WG-V.2026.28.0.1-win-x64-setup.exe",
+                     "downloadUrl":  "https://media.githubusercontent.com/media/altoglobal-gif/ALTOVPN-WG-UPDATES/main/releases/v2026.28.0.1/ALTOVPN-WG-V.2026.28.0.1-win-x64-setup.exe",
                      "sha256":  "86E8496EF5501A421DCC7570CD1995FEE9966D530C896BC82526229E34AB3D81",
                      "sizeBytes":  172211535
                  },
@@ -22,7 +22,7 @@
                              "component":  "desktop-client",
                              "platform":  "win-x64",
                              "fileName":  "ALTOVPN-WG-V.2026.28.0.1-win-x64-setup.exe",
-                             "downloadUrl":  "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/raw/main/releases/v2026.28.0.1/ALTOVPN-WG-V.2026.28.0.1-win-x64-setup.exe",
+                             "downloadUrl":  "https://media.githubusercontent.com/media/altoglobal-gif/ALTOVPN-WG-UPDATES/main/releases/v2026.28.0.1/ALTOVPN-WG-V.2026.28.0.1-win-x64-setup.exe",
                              "sha256":  "86E8496EF5501A421DCC7570CD1995FEE9966D530C896BC82526229E34AB3D81",
                              "sizeBytes":  172211535
                          },
