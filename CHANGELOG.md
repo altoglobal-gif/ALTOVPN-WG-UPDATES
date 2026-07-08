@@ -1,28 +1,21 @@
 # Changelog
 
-## V.2026.26.2.2 - 2026-06-27
+## V.2026.28.0.1 - 2026-07-08
+
+### Changed
+
+- Removed the pilot network scanner feature from the desktop client.
+- Added an Unlimited option for Max Active Tunnels while keeping the admin passcode confirmation on save.
+- Published the Modern Installer `.exe` as the update artifact for this release.
 
 ### Fixed
 
-- Fixed the modern setup executable failing to open because WPF UI assets were packaged as external content instead of embedded resources.
-- Embedded the installer icon and brand images into the WPF assembly so the single-file setup can start without sidecar files.
-
-### Verification
-
-- Opened the setup executable locally for 5 seconds without an immediate crash.
-- Checked Windows Application event log after launch and found no new setup crash events.
-
-## V.2026.26.2.1 - 2026-06-27
-
-### Fixed
-
-- Preserved the running `AltoVpnWgHelper` service during modern installer updates when the helper binary hash is unchanged.
-- The modern installer now stops and recreates the helper service only when the helper payload is actually updated or missing.
+- Added update fallback metadata and client fallback handling so a GitHub 404 on the primary artifact can use the latest full `.exe` installer URL instead.
+- Unlimited Max Active Tunnels no longer blocks additional tunnel connections.
 
 ### Release
 
-- Published the custom modern `.exe` setup package as a GitHub Release asset because it is larger than the git blob limit.
-- The in-app update channel remains on MSI artifacts until deployed clients can safely consume installer-exe artifacts.
+- Update metadata points to the SHA256-verified `ALTOVPN-WG-V.2026.28.0.1-win-x64-setup.exe` installer.
 
 ## V.2026.26.2.0 - 2026-06-27
 

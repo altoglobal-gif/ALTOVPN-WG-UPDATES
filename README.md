@@ -8,15 +8,15 @@ This repository is intentionally separate from the application source tree so th
 
 - Channel: `stable`
 - Manifest: `latest.json`
-- Latest version: `V.2026.26.2.2`
+- Latest version: `V.2026.28.0.1`
 - Minimum supported client: `V.2026.25.0.0`
-- Artifact type: `msi` for this release; `webapp-patch` remains supported for UI-only updates
+- Artifact type: `installer-exe` for this release; `webapp-patch` remains supported for UI-only updates
 
 ## Client Behavior
 
-ALTOVPN-WG reads `latest.json`, compares the installed version, downloads the listed artifact, verifies file size and SHA256, then asks the local `AltoVpnWgHelper` service to apply the update.
+ALTOVPN-WG reads `latest.json`, compares the installed version, downloads the listed artifact, verifies file size and SHA256, then asks the local `AltoVpnWgHelper` service to apply the update. If the primary artifact returns GitHub 404 and `fallbackArtifact` is present, clients that support fallback download and verify the latest full `.exe` installer URL instead.
 
-Full desktop releases may use an MSI artifact or the modern installer `.exe` artifact. MSI artifacts are installed through `msiexec`; modern installer artifacts are installed by the helper service with `--quiet`.
+Full desktop releases use a Modern Installer `.exe` artifact because native host, tray, service, or bridge code changed. Modern installer artifacts are started by the helper in quiet mode.
 
 UI-only releases may use a ZIP `webapp-patch` artifact. Patch artifacts may only contain files under:
 
@@ -47,4 +47,4 @@ Restart ALTOVPN-WG after applying an update so WebView2 reloads the updated appl
 - Publish application source changes in the original source repository before publishing this update repository.
 - Keep `latest.json` aligned with the built artifact: version, file name, download URL, SHA256, size, release notes URL, and tag must all describe the same release.
 - Do not use local-only `Updater/latest.json` changes as a real release; installed clients read the GitHub update repository by default.
-- For full installer updates, preserve the helper install path: client downloads and verifies the artifact, then `AltoVpnWgHelper` verifies SHA256 again before running `msiexec` for MSI or `--quiet` for the modern installer EXE.
+- For full installer updates, preserve the helper install path: client downloads and verifies the artifact, then `AltoVpnWgHelper` verifies SHA256 again before running the installer.
