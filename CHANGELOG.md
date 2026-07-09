@@ -1,5 +1,16 @@
 # Changelog
 
+## V.2026.28.0.3 - 2026-07-09
+
+### Changed
+
+- Published the latest desktop client as an MSI bridge release so older in-app updaters that only support MSI artifacts can still update to the current client.
+- The installed client still includes the modern installer updater compatibility fix from `V.2026.28.0.2`.
+
+### Release
+
+- Update metadata points to the SHA256-verified `ALTOVPN-WG-V.2026.28.0.3-win-x64.msi` installer.
+
 ## V.2026.28.0.2 - 2026-07-09
 
 ### Fixed
