@@ -8,9 +8,9 @@ This repository is intentionally separate from the application source tree so th
 
 - Channel: `stable`
 - Manifest: `latest.json`
-- Latest version: `V.2026.28.0.2`
+- Latest version: `V.2026.28.0.3`
 - Minimum supported client: `V.2026.25.0.0`
-- Artifact type: `installer-exe` for this release; `webapp-patch` remains supported for UI-only updates
+- Artifact type: `msi` for broad old-client updater compatibility; `webapp-patch` remains supported for UI-only updates
 
 ## Client Behavior
 
