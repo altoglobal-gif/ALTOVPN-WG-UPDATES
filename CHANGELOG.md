@@ -1,5 +1,15 @@
 # Changelog
 
+## V.2026.28.0.2 - 2026-07-09
+
+### Fixed
+
+- Fixed silent in-app modern installer updates by closing the running desktop client before replacing installed files.
+
+### Release
+
+- Update metadata points to the SHA256-verified `ALTOVPN-WG-V.2026.28.0.2-win-x64-setup.exe` installer.
+
 ## V.2026.28.0.1 - 2026-07-08
 
 ### Changed
