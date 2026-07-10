@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "automaticUpdateFloor": "V.2026.28.1.1",
   "safeLandingTarget": "V.2026.29.0.2",
-  "stableTarget": "V.2026.29.1.1",
+  "stableTarget": "V.2026.29.1.2",
   "manualBootstrapUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/blob/main/LEGACY_BOOTSTRAP.md",
   "routes": [
     {
@@ -14,14 +14,14 @@
       "minimumVersion": "V.2026.28.0.1",
       "maximumVersion": "V.2026.28.1.0",
       "mode": "conditional-or-manual",
-      "targetVersion": "V.2026.29.1.1",
+      "targetVersion": "V.2026.29.1.2",
       "reason": "These clients accept installer EXE, but legacy scheduling may require downloading the current full EXE manually."
     },
     {
       "maximumVersion": "V.2026.26.1.9",
       "mode": "manual-bootstrap",
       "artifactType": "installer-exe",
-      "targetVersion": "V.2026.29.1.1",
+      "targetVersion": "V.2026.29.1.2",
       "reason": "These clients use legacy scheduling or predate the Modern Installer contract; new MSI releases are prohibited."
     }
   ]

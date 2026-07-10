@@ -1,5 +1,18 @@
 # Changelog
 
+## V.2026.29.1.2 - 2026-07-10
+
+### Corrective Patch
+
+- Restored the Main Window profile list after an undefined Web UI state reference stopped rendering profile buttons in `V.2026.29.1.1`.
+- Preserved existing `profiles.json`, managed `.conf` files, and WireGuard keys; no profile migration or regeneration is performed.
+- Added mandatory disconnect preflight before a full installer update downloads or schedules.
+- Blocked Connect, manual reconnect, permanent-connect recovery, and automatic reconnect throughout update maintenance.
+- Serialized repeated update clicks to prevent overlapping downloads and helper scheduling.
+- Corrected install-error wording and embedded the repaired UI in both main and Modern Installer payloads.
+- Passed 21 automated tests and Release packaging QA.
+- Modern Installer EXE only; no MSI and no new Git LFS.
+
 ## V.2026.29.1.1 - 2026-07-10
 
 ### Corrective Patch
