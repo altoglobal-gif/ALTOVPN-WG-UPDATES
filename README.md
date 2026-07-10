@@ -35,8 +35,8 @@ Restart ALTOVPN-WG after applying an update so WebView2 reloads the updated appl
 ## Publishing Checklist
 
 1. Build the MSI for native/desktop changes, or stage `packages/web-ui` for UI-only patch changes.
-2. Copy the artifact into `releases/<version>/`.
-3. Compute SHA256 and size.
+2. Upload the artifact directly as a GitHub Release asset.
+3. Compute SHA256 and size from the uploaded/downloaded artifact.
 4. Update `latest.json`.
 5. Add release notes for the version.
 6. Commit and push this repository.
@@ -44,6 +44,7 @@ Restart ALTOVPN-WG after applying an update so WebView2 reloads the updated appl
 
 ## Publishing Rules
 
+- Never commit installer binaries or release artifacts to git, and never use Git LFS. Publish binaries only as GitHub Release assets.
 - Publish application source changes in the original source repository before publishing this update repository.
 - Keep `latest.json` aligned with the built artifact: version, file name, download URL, SHA256, size, release notes URL, and tag must all describe the same release.
 - Do not use local-only `Updater/latest.json` changes as a real release; installed clients read the GitHub update repository by default.
