@@ -17,17 +17,36 @@ No lower version is claimed as unattended-compatible. This deliberately stops `2
 
 | Version/tag | Public asset | Classification |
 |---|---|---|
-| `25.0.1` | Webapp ZIP | UI package only |
-| `25.0.2`–`25.0.3` | MSI | Legacy desktop |
-| `26.0.6`–`26.0.9` | MSI | Legacy desktop |
-| `26.1.0`–`26.1.5` | MSI | Legacy desktop |
-| `26.2.0`–`26.2.2-modern-installer` | Setup EXE | Manual Modern Installer previews; tags carry the suffix |
-| `28.0.2` | Setup EXE | Transitional desktop |
-| `28.0.3`–`28.1.0` | MSI | Transitional desktop/regression era |
-| `28.1.1` | MSI plus Webapp ZIP | Recovery generation |
-| `28.1.2` | Webapp ZIP only | Not a native desktop/updater version |
-| `29.0.0`–`29.0.2` | Setup EXE | Modern desktop; 29.0.2 introduced native restart coordination |
-| `29.1.0`–`29.1.4` | Setup EXE | Modern desktop |
+| `25.0.1` | `ALTOVPN-WG-webapp-V.2026.25.0.1-win-x64.zip` | UI package only |
+| `25.0.2` | `ALTOVPN-WG-V.2026.25.0.2-win-x64.msi` | Legacy desktop |
+| `25.0.3` | `ALTOVPN-WG-V.2026.25.0.3-win-x64.msi` | Legacy desktop |
+| `26.0.6` | `ALTOVPN-WG-V.2026.26.0.6-win-x64.msi` | Legacy desktop |
+| `26.0.7` | `ALTOVPN-WG-V.2026.26.0.7-win-x64.msi` | Legacy desktop |
+| `26.0.8` | `ALTOVPN-WG-V.2026.26.0.8-win-x64.msi` | Legacy desktop |
+| `26.0.9` | `ALTOVPN-WG-V.2026.26.0.9-win-x64.msi` | Legacy desktop |
+| `26.1.0` | `ALTOVPN-WG-V.2026.26.1.0-win-x64.msi` | Legacy desktop |
+| `26.1.1` | `ALTOVPN-WG-V.2026.26.1.1-win-x64.msi` | Legacy desktop |
+| `26.1.2` | `ALTOVPN-WG-V.2026.26.1.2-win-x64.msi` | Legacy desktop |
+| `26.1.3` | `ALTOVPN-WG-V.2026.26.1.3-win-x64.msi` | Legacy desktop |
+| `26.1.4` | `ALTOVPN-WG-V.2026.26.1.4-win-x64.msi` | Legacy desktop |
+| `26.1.5` | `ALTOVPN-WG-V.2026.26.1.5-win-x64.msi` | Legacy desktop |
+| `26.2.0-modern-installer` | `ALTOVPN-WG-V.2026.26.2.0-win-x64-setup.exe` | Manual installer preview |
+| `26.2.1-modern-installer` | `ALTOVPN-WG-V.2026.26.2.1-win-x64-setup.exe` | Manual installer preview |
+| `26.2.2-modern-installer` | `ALTOVPN-WG-V.2026.26.2.2-win-x64-setup.exe` | Manual installer preview |
+| `28.0.2` | `ALTOVPN-WG-V.2026.28.0.2-win-x64-setup.exe` | Transitional desktop |
+| `28.0.3` | `ALTOVPN-WG-V.2026.28.0.3-win-x64.msi` | Transitional MSI regression |
+| `28.0.4` | `ALTOVPN-WG-V.2026.28.0.4-win-x64.msi` | Transitional desktop |
+| `28.1.0` | `ALTOVPN-WG-V.2026.28.1.0-win-x64.msi` | Transitional desktop |
+| `28.1.1` | MSI and `ALTOVPN-WG-webapp-V.2026.28.1.1-win-x64.zip` | Recovery generation |
+| `28.1.2` | `ALTOVPN-WG-webapp-V.2026.28.1.2-win-x64.zip` | Web UI only; no native desktop |
+| `29.0.0` | `ALTOVPN-WG-V.2026.29.0.0-win-x64-setup.exe` | Modern desktop |
+| `29.0.1` | `ALTOVPN-WG-V.2026.29.0.1-win-x64-setup.exe` | Compatibility recovery desktop |
+| `29.0.2` | `ALTOVPN-WG-V.2026.29.0.2-win-x64-setup.exe` | Native restart coordinator |
+| `29.1.0` | `ALTOVPN-WG-V.2026.29.1.0-win-x64-setup.exe` | Modern desktop |
+| `29.1.1` | `ALTOVPN-WG-V.2026.29.1.1-win-x64-setup.exe` | Modern desktop |
+| `29.1.2` | `ALTOVPN-WG-V.2026.29.1.2-win-x64-setup.exe` | Verified automatic floor |
+| `29.1.3` | `ALTOVPN-WG-V.2026.29.1.3-win-x64-setup.exe` | Permanent Safe Main |
+| `29.1.4` | `ALTOVPN-WG-V.2026.29.1.4-win-x64-setup.exe` | Current stable |
 
 There is no public GitHub desktop release for `26.1.6`–`26.1.9`, `28.0.1`, or `29.0.3`.
 
