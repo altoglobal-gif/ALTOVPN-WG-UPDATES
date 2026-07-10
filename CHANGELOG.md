@@ -1,5 +1,18 @@
 # Changelog
 
+## V.2026.28.0.4 - 2026-07-10
+
+### Fixed
+
+- Prevented silent MSI updates from stopping or replacing the helper while the old desktop client is still running.
+- Made Restart App wait for installer completion before reopening ALTOVPN-WG.
+- Added MSI-side client shutdown for compatibility with older MSI-only updaters.
+- Added a final active-tunnel safety check immediately before installer startup.
+
+### Release
+
+- Published the Windows x64 MSI bridge update with MSI ProductVersion `226.28.4`.
+
 ## V.2026.28.0.3 - 2026-07-09
 
 ### Changed
