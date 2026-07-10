@@ -2,27 +2,25 @@
   "schemaVersion": 1,
   "appId": "ALTOVPN-WG",
   "channel": "stable",
-  "latestVersion": "V.2026.29.0.0",
-  "fileVersion": "2026.29.0.0",
+  "latestVersion": "V.2026.29.0.1",
+  "fileVersion": "2026.29.0.1",
   "minimumSupportedVersion": "V.2026.28.1.1",
-  "publishedAt": "2026-07-10T11:54:41+07:00",
-  "releaseNotesUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/tag/v2026.29.0.0",
+  "publishedAt": "2026-07-10T12:17:11+07:00",
+  "releaseNotesUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/tag/v2026.29.0.1",
   "manifestUrl": "https://api.github.com/repos/altoglobal-gif/ALTOVPN-WG-UPDATES/contents/latest.json?ref=main",
   "changeSummary": [
-    "Added: VPN Destination Networks with readable CIDR routes and route-mode warnings.",
-    "Added: Modern Installer EXE restored as the Windows updater package.",
-    "Changed: Main Window, Tray Panel, and What's New UI were refined.",
-    "Changed: Compact telemetry updates replace full-state traffic refreshes.",
-    "Fixed: Overlapping timers, repeated WireGuard process calls, and PowerShell DNS dependency.",
-    "Removed: MSI from the primary Windows updater path."
+    "Fixed: Restored the latest Software Update, App & System, and Admin Mode layout in the packaged installer.",
+    "Fixed: Preserved Lock Now, Unlimited tunnels, session policy, and profile credentials.",
+    "Fixed: V.2026.28.1.1 can update through the installer-exe compatibility contract.",
+    "Changed: Added explicit compatibility routes and a manifest release gate."
   ],
   "artifact": {
     "type": "installer-exe",
     "component": "desktop-client",
     "platform": "win-x64",
-    "fileName": "ALTOVPN-WG-V.2026.29.0.0-win-x64-setup.exe",
-    "downloadUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/download/v2026.29.0.0/ALTOVPN-WG-V.2026.29.0.0-win-x64-setup.exe",
-    "sha256": "4854328C8BD98075A0CCA812AFFD7875C1CB064379623AAF5749874F2FAC84C6",
+    "fileName": "ALTOVPN-WG-V.2026.29.0.1-win-x64-setup.exe",
+    "downloadUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/download/v2026.29.0.1/ALTOVPN-WG-V.2026.29.0.1-win-x64-setup.exe",
+    "sha256": "56961E2AE04730D7FB2FC87483F76650CC49947F1B58E19FCF63DEED7954E0C6",
     "sizeBytes": 172225359
   },
   "updatePolicy": {
@@ -32,6 +30,6 @@
   },
   "source": {
     "repository": "altoglobal-gif/ALTOVPN-WG-UPDATES",
-    "tag": "v2026.29.0.0"
+    "tag": "v2026.29.0.1"
   }
 }

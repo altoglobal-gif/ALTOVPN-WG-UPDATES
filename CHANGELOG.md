@@ -1,5 +1,17 @@
 # Changelog
 
+## V.2026.29.0.1 - 2026-07-10
+
+### Fixed
+
+- Restored the latest Settings/Admin UI in the packaged Modern Installer.
+- Preserved Lock Now, Unlimited tunnels, session policy, and profile credentials.
+- Corrected V.2026.28.1.1 updater compatibility with the `installer-exe` artifact contract.
+
+### Changed
+
+- Added explicit update compatibility routes and a release-gate check.
+
 ## V.2026.29.0.0 - 2026-07-10
 
 ### Added
