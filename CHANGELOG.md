@@ -1,5 +1,16 @@
 # Changelog
 
+## V.2026.28.1.2 - 2026-07-10
+
+### Added
+
+- Added categorized changelog cards to Update Details: Added, Changed, Fixed, and Removed.
+- Added per-category counts and automatic hiding for empty categories.
+
+### Changed
+
+- Update Details now separates release changes from technical artifact/status details.
+
 ## V.2026.28.1.1 - 2026-07-10
 
 ### Critical Recovery
