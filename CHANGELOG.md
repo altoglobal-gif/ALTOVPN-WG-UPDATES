@@ -1,5 +1,17 @@
 # Changelog
 
+## V.2026.28.1.0 - 2026-07-10
+
+### Major Update
+
+- Reworked Software Update, Settings, and Admin Mode for clearer status, grouping, and explicit save actions.
+- Scheduled updates now install on full Exit as well as Restart App.
+- Exit dialogs clearly distinguish install-and-reopen from install-without-reopening behavior.
+
+### Release
+
+- Published the Windows x64 MSI with MSI ProductVersion `226.28.10`.
+
 ## V.2026.28.0.4 - 2026-07-10
 
 ### Fixed
