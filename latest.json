@@ -4,7 +4,7 @@
   "channel": "stable",
   "latestVersion": "V.2026.29.0.0",
   "fileVersion": "2026.29.0.0",
-  "minimumSupportedVersion": "V.2026.25.0.0",
+  "minimumSupportedVersion": "V.2026.28.1.1",
   "publishedAt": "2026-07-10T11:54:41+07:00",
   "releaseNotesUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/tag/v2026.29.0.0",
   "manifestUrl": "https://api.github.com/repos/altoglobal-gif/ALTOVPN-WG-UPDATES/contents/latest.json?ref=main",

@@ -16,6 +16,7 @@
 
 ### Fixed
 
+- Corrected the updater artifact type to `installer-exe` for V.2026.28.1.1 compatibility.
 - Prevented overlapping timer callbacks and repeated unchanged rendering.
 - Improved installer file replacement while the old client closes.
 

@@ -18,6 +18,7 @@ Major Windows UX and performance release.
 
 ## Fixed
 
+- Corrected the public updater artifact type to `installer-exe` so V.2026.28.1.1 can download and schedule the Modern Installer.
 - Overlapping background timer callbacks.
 - Repeated unchanged Main UI and Tray list rendering.
 - Modern Installer file replacement while the previous client is closing.
@@ -33,3 +34,9 @@ Major Windows UX and performance release.
 - SHA256: `4854328C8BD98075A0CCA812AFFD7875C1CB064379623AAF5749874F2FAC84C6`
 - Size: `172225359` bytes
 - Git LFS: not used
+
+## Compatibility
+
+- Automatic update: V.2026.28.1.1 and newer.
+- V.2026.28.0.1 through V.2026.28.1.0: automatic when the legacy scheduler is allowed; otherwise run the full EXE manually.
+- V.2026.26.1.9 and older: run the full EXE once as a bootstrap. Automatic updates resume afterward.
