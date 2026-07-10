@@ -1,25 +1,28 @@
 {
   "schemaVersion": 1,
-  "automaticUpdateFloor": "V.2026.28.1.1",
-  "stableTarget": "V.2026.29.0.2",
+  "automaticUpdateFloor": "V.2026.29.0.2",
+  "safeLandingTarget": "V.2026.29.0.2",
+  "stableTarget": "V.2026.29.1.0",
   "manualBootstrapUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/blob/main/LEGACY_BOOTSTRAP.md",
   "routes": [
     {
-      "minimumVersion": "V.2026.28.1.1",
+      "minimumVersion": "V.2026.29.0.2",
       "mode": "direct-automatic",
       "artifactType": "installer-exe"
     },
     {
-      "minimumVersion": "V.2026.26.2.1",
-      "maximumVersion": "V.2026.28.1.0",
-      "mode": "conditional-or-manual",
-      "reason": "These clients accept installer EXE, but older scheduler and lifecycle implementations are not reliable on every managed device."
+      "minimumVersion": "V.2026.28.1.1",
+      "maximumVersion": "V.2026.29.0.1",
+      "mode": "safe-landing-bootstrap",
+      "targetVersion": "V.2026.29.0.2",
+      "reason": "Install the permanent Safe Landing EXE first, reopen the app, then check again for the Major update."
     },
     {
-      "maximumVersion": "V.2026.26.1.9",
+      "maximumVersion": "V.2026.28.1.0",
       "mode": "manual-bootstrap",
       "artifactType": "installer-exe",
-      "reason": "These clients predate the Modern Installer update contract; new MSI releases are prohibited."
+      "targetVersion": "V.2026.29.0.2",
+      "reason": "These clients use legacy scheduling or predate the Modern Installer contract; new MSI releases are prohibited."
     }
   ]
 }

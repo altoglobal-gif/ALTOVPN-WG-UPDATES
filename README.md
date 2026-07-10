@@ -8,9 +8,9 @@ This repository is intentionally separate from the application source tree so th
 
 - Channel: `stable`
 - Manifest: `latest.json`
-- Latest version: `V.2026.28.1.2` recovery web patch
-- Minimum supported client: `V.2026.25.0.0`
-- Artifact type: `msi` for broad old-client updater compatibility; `webapp-patch` remains supported for UI-only updates
+- Latest version: `V.2026.29.1.0` Windows VPN visibility Major
+- Automatic update floor: `V.2026.29.0.2` Safe Landing
+- Artifact type: Modern Installer `installer-exe`; new MSI releases are prohibited
 
 ## Client Behavior
 
@@ -34,7 +34,7 @@ Restart ALTOVPN-WG after applying an update so WebView2 reloads the updated appl
 
 ## Publishing Checklist
 
-1. Build the MSI for native/desktop changes, or stage `packages/web-ui` for UI-only patch changes.
+1. Build the Modern Installer EXE for native/desktop changes, or stage `packages/web-ui` for UI-only patch changes.
 2. Upload the artifact directly as a GitHub Release asset.
 3. Compute SHA256 and size from the uploaded/downloaded artifact.
 4. Update `latest.json`.

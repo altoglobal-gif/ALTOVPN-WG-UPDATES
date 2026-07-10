@@ -1,5 +1,18 @@
 # Changelog
 
+## V.2026.29.1.0 - 2026-07-10
+
+### Major
+
+- Added Network VPN Scanner with selected routed-CIDR enforcement, live progress, cancellation, reverse DNS, latency, neighbor-table MAC availability, and CSV/JSON export.
+- Added IEEE-first OUI vendor database refresh with a seven-day cache and bundled offline fallback; discovered addresses are never submitted to IEEE.
+- Added `/24` normal limits, Admin-only larger ranges up to 4,096 addresses, and mandatory default-route blocking.
+- Moved Profile Config into a dedicated Basic/Advanced popup.
+- Refined Tray Panel around VPN status, selected profile, Connect/Disconnect, and Quick Connect.
+- Reworked the Main Window connection status into a compact modern VPN summary.
+- Promoted `V.2026.29.0.2` to the permanent Safe Landing floor; older clients install it first and check again for this Major.
+- Published Modern Installer EXE only; no MSI and no Git LFS.
+
 ## V.2026.29.0.2 - 2026-07-10
 
 ### Added
