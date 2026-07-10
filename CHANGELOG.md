@@ -1,5 +1,20 @@
 # Changelog
 
+## V.2026.29.0.2 - 2026-07-10
+
+### Added
+
+- Added live update stages, percentage, transferred bytes, and progress bars.
+
+### Changed
+
+- Redesigned Settings as a control center instead of a grid of equal action buttons.
+
+### Fixed
+
+- Removed PowerShell from Restart App update coordination.
+- Isolated recovery build output to avoid antivirus-locked stale files.
+
 ## V.2026.29.0.1 - 2026-07-10
 
 ### Fixed
