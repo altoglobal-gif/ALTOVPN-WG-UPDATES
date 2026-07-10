@@ -1,5 +1,18 @@
 # Changelog
 
+## V.2026.29.1.3 - 2026-07-10
+
+### Safe Main
+
+- Added permanent legacy-to-Safe-Main-to-stable staged update routing.
+- Added TCP 22/80/443 discovery so ICMP-blocked routed devices can still be found.
+- Added one-time host-key-confirmed Linux and MikroTik SSH inventory without credential storage.
+- Expanded the scanner client list and added service/reachability columns.
+- Rebalanced the Tray Panel, themed its profile scrollbar, and added a CIDR List with SSH actions.
+- Added Modern Installer tunnel preflight and legacy-flow relaunch behavior.
+- Passed 24 automated tests and release builds with zero errors/warnings.
+- Modern Installer EXE only; no MSI and no Git LFS.
+
 ## V.2026.29.1.2 - 2026-07-10
 
 ### Corrective Patch
