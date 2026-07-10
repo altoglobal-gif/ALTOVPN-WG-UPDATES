@@ -2,27 +2,27 @@
   "schemaVersion": 1,
   "appId": "ALTOVPN-WG",
   "channel": "stable",
-  "latestVersion": "V.2026.29.1.0",
-  "fileVersion": "2026.29.1.0",
-  "minimumSupportedVersion": "V.2026.29.0.2",
-  "publishedAt": "2026-07-10T13:32:18+07:00",
-  "releaseNotesUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/blob/main/RELEASE_NOTES_v2026.29.1.0.md",
+  "latestVersion": "V.2026.29.1.1",
+  "fileVersion": "2026.29.1.1",
+  "minimumSupportedVersion": "V.2026.28.1.1",
+  "publishedAt": "2026-07-10T13:52:53+07:00",
+  "releaseNotesUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/blob/main/RELEASE_NOTES_v2026.29.1.1.md",
   "manifestUrl": "https://api.github.com/repos/altoglobal-gif/ALTOVPN-WG-UPDATES/contents/latest.json?ref=main",
   "changeSummary": [
-    "Added: Network VPN Scanner with explicit CIDR selection, progress, cancellation, reverse DNS, MAC availability, IEEE/offline vendor lookup, and CSV/JSON export.",
-    "Changed: Profile Config now opens in a dedicated Basic/Advanced popup.",
-    "Changed: Tray Panel and Main connection summary now use a compact VPN-first hierarchy.",
-    "Security: Default routes are blocked; normal scans are capped at 256 addresses and larger ranges require Admin Mode.",
-    "Fixed: Bounded DNS concurrency and progress pushes prevent large scans from stalling the client."
+    "Changed: Tray Panel now uses a new connection header card, blue segmented navigation, CIDR-aware profile cards, primary tunnel action, and modern quick actions.",
+    "Changed: Main profile toolbar separates view tabs, primary actions, and secondary tools into a compact hierarchy.",
+    "Added: Admin Mode policy can block connecting profiles that duplicate an active tunnel's normalized VPN destination CIDR.",
+    "Fixed: V.2026.29.1.0 shipped only a subtle Tray refinement instead of the promised full redesign.",
+    "Fixed: Duplicate CIDR conflicts identify the active profile and exact normalized IPv4 or IPv6 CIDR."
   ],
   "artifact": {
     "type": "installer-exe",
     "component": "desktop-client",
     "platform": "win-x64",
-    "fileName": "ALTOVPN-WG-V.2026.29.1.0-win-x64-setup.exe",
-    "downloadUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/download/v2026.29.1.0/ALTOVPN-WG-V.2026.29.1.0-win-x64-setup.exe",
-    "sha256": "C3AC1F3563ADDD6C37E4B302FAEAF052AAC54A21FEBD3C5967798106D35A98F2",
-    "sizeBytes": 173119823
+    "fileName": "ALTOVPN-WG-V.2026.29.1.1-win-x64-setup.exe",
+    "downloadUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/download/v2026.29.1.1/ALTOVPN-WG-V.2026.29.1.1-win-x64-setup.exe",
+    "sha256": "15B80D2AEC62D617ECF9BB634E8A910B856DF0D2F7BC97056B625D6A4CEB0B62",
+    "sizeBytes": 173122383
   },
   "updatePolicy": {
     "requiresAdmin": true,
@@ -31,6 +31,6 @@
   },
   "source": {
     "repository": "altoglobal-gif/ALTOVPN-WG-UPDATES",
-    "tag": "v2026.29.1.0"
+    "tag": "v2026.29.1.1"
   }
 }

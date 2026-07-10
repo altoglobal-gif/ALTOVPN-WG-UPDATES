@@ -1,5 +1,18 @@
 # Changelog
 
+## V.2026.29.1.1 - 2026-07-10
+
+### Corrective Patch
+
+- Replaced the lightly modified legacy Tray surface with the promised VPN-first design: connection header card, semantic status badge, blue segmented navigation, CIDR-aware profile cards, stronger primary action, and modern quick actions.
+- Reworked the crowded Main profile toolbar into segmented view tabs, primary actions, and a compact secondary tool row.
+- Added protected Admin Mode policy to block a profile from connecting when an active tunnel already uses the same normalized IPv4 or IPv6 destination CIDR.
+- Added persistent policy state and a conflict message containing the active profile and exact CIDR.
+- Restored direct Update Available / Download for `V.2026.29.0.1` by keeping the automatic floor at `V.2026.28.1.1`.
+- Fixed tunnel operations timing out in the client at 20 seconds before the helper's 30-second command budget completed.
+- Passed 20 automated tests plus host/helper/installer, XAML, bridge, JavaScript, CSS, and payload QA.
+- Modern Installer EXE only; no MSI and no Git LFS.
+
 ## V.2026.29.1.0 - 2026-07-10
 
 ### Major

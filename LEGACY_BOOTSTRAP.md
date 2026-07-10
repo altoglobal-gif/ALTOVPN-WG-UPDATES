@@ -16,8 +16,8 @@ Profiles and private keys remain in the existing ALTOVPN-WG profile store. `V.20
 
 1. Open `V.2026.29.0.2`.
 2. Open **Settings → Check Update**.
-3. Download and install `V.2026.29.1.0`.
-4. Exit or choose Restart & Finish, then confirm the installed version is `V.2026.29.1.0`.
+3. Download and install `V.2026.29.1.1`.
+4. Exit or choose Restart & Finish, then confirm the installed version is `V.2026.29.1.1`.
 
 This deliberate second check prevents legacy clients from skipping the Safe Landing update worker.
 
@@ -31,7 +31,7 @@ This deliberate second check prevents legacy clients from skipping the Safe Land
 
 ## Current Major verification
 
-- File: `ALTOVPN-WG-V.2026.29.1.0-win-x64-setup.exe`
-- Size: `173119823` bytes
-- SHA256: `C3AC1F3563ADDD6C37E4B302FAEAF052AAC54A21FEBD3C5967798106D35A98F2`
-- [Major release notes](RELEASE_NOTES_v2026.29.1.0.md)
+- File: `ALTOVPN-WG-V.2026.29.1.1-win-x64-setup.exe`
+- Size: `173122383` bytes
+- SHA256: `15B80D2AEC62D617ECF9BB634E8A910B856DF0D2F7BC97056B625D6A4CEB0B62`
+- [Current release notes](RELEASE_NOTES_v2026.29.1.1.md)

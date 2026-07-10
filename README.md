@@ -8,8 +8,8 @@ This repository is intentionally separate from the application source tree so th
 
 - Channel: `stable`
 - Manifest: `latest.json`
-- Latest version: `V.2026.29.1.0` Windows VPN visibility Major
-- Automatic update floor: `V.2026.29.0.2` Safe Landing
+- Latest version: `V.2026.29.1.1` Tray UX and CIDR policy corrective patch
+- Automatic update floor: `V.2026.28.1.1` (keeps `V.2026.29.0.1` on a visible Download/Install path)
 - Artifact type: Modern Installer `installer-exe`; new MSI releases are prohibited
 
 ## Client Behavior
