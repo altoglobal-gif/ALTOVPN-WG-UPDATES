@@ -1,5 +1,17 @@
 # Changelog
 
+## V.2026.29.1.6 - 2026-07-10
+
+- Completed the automatic in-place Bridge → Stable route.
+- Preserved all routed SSH scan, OS detection, MAC/OUI, Tray Panel, and CIDR List functionality.
+- Kept profile/key preservation, active-tunnel refusal, native worker restart coordination, and dual SHA256 verification.
+
+## V.2026.29.1.5 - 2026-07-10
+
+- Added an in-place Safe Main bridge for native `V.2026.28.1.1` through `V.2026.29.1.4`.
+- Made GitHub Release installation the final fallback only for clients below the verified native-worker floor.
+- Added automatic second-stage checking from the bridge to `V.2026.29.1.6` stable.
+
 ## Channel policy correction - 2026-07-10
 
 - Raised the verified unattended floor from `V.2026.28.1.1` to `V.2026.29.1.2` after field failures from mixed native/Web UI generations.

@@ -6,12 +6,12 @@ Audited on 2026-07-10 from the public GitHub Releases API, update-repository tag
 
 | Native installed version | Route |
 |---|---|
-| Below `V.2026.29.1.2` | One-time manual install of Safe Main `V.2026.29.1.3`; relaunch; check again |
-| `V.2026.29.1.2` | Automatic `latest.json` → `V.2026.29.1.3` |
-| `V.2026.29.1.3` | Automatic `nextManifestUrl` → `stable.json` → `V.2026.29.1.4` |
-| `V.2026.29.1.4` | Current stable |
+| Below `V.2026.28.1.1` | GitHub Release bridge is the final fallback |
+| `V.2026.28.1.1`–`V.2026.29.1.4` | Automatic in-place `latest.json` → bridge `V.2026.29.1.5` |
+| `V.2026.29.1.5` | Automatic `nextManifestUrl` → stable `V.2026.29.1.6` |
+| `V.2026.29.1.6` | Current stable |
 
-No lower version is claimed as unattended-compatible. This deliberately stops `29.0.1`, a UI-labeled `29.0.3`, or a 26–28 client from jumping directly into an unverified installer path.
+The bridge avoids a manual reinstall for the verified native-worker generation. Very old clients remain on the explicit GitHub fallback rather than being forced through an unsafe scheduler.
 
 ## Public GitHub release assets (real downloadable releases)
 
@@ -46,7 +46,9 @@ No lower version is claimed as unattended-compatible. This deliberately stops `2
 | `29.1.1` | `ALTOVPN-WG-V.2026.29.1.1-win-x64-setup.exe` | Modern desktop |
 | `29.1.2` | `ALTOVPN-WG-V.2026.29.1.2-win-x64-setup.exe` | Verified automatic floor |
 | `29.1.3` | `ALTOVPN-WG-V.2026.29.1.3-win-x64-setup.exe` | Permanent Safe Main |
-| `29.1.4` | `ALTOVPN-WG-V.2026.29.1.4-win-x64-setup.exe` | Current stable |
+| `29.1.4` | `ALTOVPN-WG-V.2026.29.1.4-win-x64-setup.exe` | Previous stable |
+| `29.1.5` | `ALTOVPN-WG-V.2026.29.1.5-win-x64-setup.exe` | In-place Safe Main bridge |
+| `29.1.6` | `ALTOVPN-WG-V.2026.29.1.6-win-x64-setup.exe` | Current staged-update stable |
 
 There is no public GitHub desktop release for `26.1.6`–`26.1.9`, `28.0.1`, or `29.0.3`.
 
@@ -72,7 +74,9 @@ There is no public GitHub desktop release for `26.1.6`–`26.1.9`, `28.0.1`, or 
 | `29.0.3` | Version/source baseline only | No released artifact |
 | `29.1.2` | Tunnel disconnect preflight, maintenance lock, serialized update | Verified automatic floor |
 | `29.1.3` | HTTPS-only chained-manifest resolver | Permanent Safe Main |
-| `29.1.4` | Current routed SSH scan corrective release | Moving stable |
+| `29.1.4` | Routed SSH scan corrective release | Previous stable |
+| `29.1.5` | Universal in-place landing target with chained manifest support | Safe Main bridge |
+| `29.1.6` | Stable completion with current feature set | Moving stable |
 
 ## Rules that prevent another mixed route
 

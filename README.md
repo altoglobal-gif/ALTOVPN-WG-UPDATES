@@ -9,9 +9,9 @@ This repository is intentionally separate from the application source tree so th
 - Channel: `stable`
 - Legacy/Safe Main manifest: `latest.json`
 - Moving stable manifest: `stable.json`
-- Safe Main: `V.2026.29.1.3`
-- Moving stable: `V.2026.29.1.4`
-- Automatic update floor: `V.2026.29.1.2`; every lower native version uses the one-time manual Safe Main installer
+- Safe Main bridge: `V.2026.29.1.5`
+- Moving stable: `V.2026.29.1.6`
+- Automatic in-place floor: `V.2026.28.1.1`; older native clients use GitHub Release only as the final fallback
 - Artifact type: Modern Installer `installer-exe`; new MSI releases are prohibited
 
 ## Client Behavior

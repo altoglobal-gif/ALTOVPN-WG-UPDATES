@@ -2,26 +2,25 @@
   "schemaVersion": 1,
   "appId": "ALTOVPN-WG",
   "channel": "stable",
-  "latestVersion": "V.2026.29.1.4",
-  "fileVersion": "2026.29.1.4",
-  "minimumSupportedVersion": "V.2026.29.1.3",
-  "publishedAt": "2026-07-10T16:56:29+07:00",
-  "releaseNotesUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/blob/main/RELEASE_NOTES_v2026.29.1.4.md",
+  "latestVersion": "V.2026.29.1.6",
+  "fileVersion": "2026.29.1.6",
+  "minimumSupportedVersion": "V.2026.29.1.5",
+  "publishedAt": "2026-07-10T17:56:56+07:00",
+  "releaseNotesUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/blob/main/RELEASE_NOTES_v2026.29.1.6.md",
   "manifestUrl": "https://api.github.com/repos/altoglobal-gif/ALTOVPN-WG-UPDATES/contents/stable.json?ref=main",
   "changeSummary": [
-    "Fixed: Trust & Scan now rescans the validated CIDR from the SSH device.",
-    "Added: Automatic Linux, MikroTik RouterOS, and Windows OpenSSH selection.",
-    "Fixed: Remote neighbor and ARP data now populates MAC address and IEEE OUI Manufacturer.",
-    "Added: Scan again through SSH with fresh credentials and host-key confirmation.",
-    "Changed: SSH pivot scans remain bounded to 256 native-validated IPv4 targets."
+    "Completed: Automatic Safe Main bridge to moving Stable update sequence.",
+    "Preserved: SSH pivot rescan with Linux, MikroTik RouterOS, and Windows auto-detection.",
+    "Preserved: Remote MAC address and IEEE OUI Manufacturer inventory.",
+    "Preserved: Profiles, managed configs, private keys, tunnel preflight, and native restart coordination."
   ],
   "artifact": {
     "type": "installer-exe",
     "component": "desktop-client",
     "platform": "win-x64",
-    "fileName": "ALTOVPN-WG-V.2026.29.1.4-win-x64-setup.exe",
-    "downloadUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/download/v2026.29.1.4/ALTOVPN-WG-V.2026.29.1.4-win-x64-setup.exe",
-    "sha256": "4CC2F1AA1F4310C457DC5BCB609A6849E737BB21D4653C9E16BACC3573BFE52B",
+    "fileName": "ALTOVPN-WG-V.2026.29.1.6-win-x64-setup.exe",
+    "downloadUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/download/v2026.29.1.6/ALTOVPN-WG-V.2026.29.1.6-win-x64-setup.exe",
+    "sha256": "FA1D62B5944B760AD9E38998ED26556046A651DCF4FC9F8F5B14F315C1D280FA",
     "sizeBytes": 175976616
   },
   "updatePolicy": {
@@ -31,6 +30,6 @@
   },
   "source": {
     "repository": "altoglobal-gif/ALTOVPN-WG-UPDATES",
-    "tag": "v2026.29.1.4"
+    "tag": "v2026.29.1.6"
   }
 }
