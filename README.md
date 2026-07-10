@@ -8,7 +8,7 @@ This repository is intentionally separate from the application source tree so th
 
 - Channel: `stable`
 - Manifest: `latest.json`
-- Latest version: `V.2026.28.1.1` recovery web patch
+- Latest version: `V.2026.28.1.2` recovery web patch
 - Minimum supported client: `V.2026.25.0.0`
 - Artifact type: `msi` for broad old-client updater compatibility; `webapp-patch` remains supported for UI-only updates
 
