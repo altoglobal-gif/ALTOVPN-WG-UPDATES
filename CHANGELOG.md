@@ -1,5 +1,12 @@
 # Changelog
 
+## Channel policy correction - 2026-07-10
+
+- Raised the verified unattended floor from `V.2026.28.1.1` to `V.2026.29.1.2` after field failures from mixed native/Web UI generations.
+- Classified `V.2026.29.0.3` as source-only and `V.2026.28.1.2` as Web UI-only.
+- Routed every native version below `V.2026.29.1.2` to the documented one-time manual Safe Main recovery instead of an unverified direct jump.
+- Added a complete public-asset and native-capability inventory plus an exhaustive compatibility route gate.
+
 ## V.2026.29.1.4 - 2026-07-10
 
 ### Corrective Patch

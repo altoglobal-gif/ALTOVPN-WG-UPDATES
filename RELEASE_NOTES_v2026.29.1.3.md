@@ -6,7 +6,8 @@ Safe Main staged-update, routed discovery, SSH inventory, and Tray Panel consist
 
 - `latest.json` permanently lands compatible older clients on this Safe Main release.
 - After relaunch, Safe Main follows HTTPS-only `stable.json` and checks again for a higher release.
-- Clients older than the automatic floor use the one-time Modern Installer EXE bootstrap; no new MSI is published.
+- Only native `V.2026.29.1.2` is accepted for automatic landing. Older clients use the one-time Modern Installer EXE bootstrap; no new MSI is published.
+- `V.2026.29.0.3` is source-only and `V.2026.28.1.2` is Web UI-only; neither is an automatic native baseline.
 
 ## Discovery and SSH
 

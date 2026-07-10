@@ -9,13 +9,16 @@ This repository is intentionally separate from the application source tree so th
 - Channel: `stable`
 - Legacy/Safe Main manifest: `latest.json`
 - Moving stable manifest: `stable.json`
-- Latest version: `V.2026.29.1.1` Tray UX and CIDR policy corrective patch
-- Automatic update floor: `V.2026.28.1.1` (keeps `V.2026.29.0.1` on a visible Download/Install path)
+- Safe Main: `V.2026.29.1.3`
+- Moving stable: `V.2026.29.1.4`
+- Automatic update floor: `V.2026.29.1.2`; every lower native version uses the one-time manual Safe Main installer
 - Artifact type: Modern Installer `installer-exe`; new MSI releases are prohibited
 
 ## Client Behavior
 
 Legacy ALTOVPN-WG clients read `latest.json`, which remains pinned to the permanent Safe Main release. Safe Main and newer clients follow its HTTPS-only `nextManifestUrl` to `stable.json` after the landing version is installed. Every artifact is verified by size and SHA256 before the local `AltoVpnWgHelper` schedules installation.
+
+The installed native desktop file version is authoritative. `V.2026.29.0.3` is source-only and `V.2026.28.1.2` is Web UI-only; neither may be treated as a native updater generation. See [VERSION_HISTORY.md](VERSION_HISTORY.md).
 
 Full desktop releases use a Modern Installer `.exe` artifact because native host, tray, service, or bridge code changed. Modern installer artifacts are started by the helper in quiet mode.
 

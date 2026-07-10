@@ -1,14 +1,82 @@
 {
-  "schemaVersion": 2,
-  "automaticUpdateFloor": "V.2026.28.1.1",
+  "schemaVersion": 3,
+  "versionAuthority": "native-desktop-file-version",
+  "automaticUpdateFloor": "V.2026.29.1.2",
   "safeLandingTarget": "V.2026.29.1.3",
   "stableTarget": "V.2026.29.1.4",
   "legacyManifest": "latest.json",
   "stableManifest": "stable.json",
   "manualBootstrapUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/blob/main/LEGACY_BOOTSTRAP.md",
+  "knownClientVersions": [
+    "V.2026.25.0.2",
+    "V.2026.25.0.3",
+    "V.2026.26.0.2",
+    "V.2026.26.0.3",
+    "V.2026.26.0.4",
+    "V.2026.26.0.6",
+    "V.2026.26.0.7",
+    "V.2026.26.0.8",
+    "V.2026.26.0.9",
+    "V.2026.26.1.0",
+    "V.2026.26.1.1",
+    "V.2026.26.1.2",
+    "V.2026.26.1.3",
+    "V.2026.26.1.4",
+    "V.2026.26.1.5",
+    "V.2026.26.1.6",
+    "V.2026.26.1.7",
+    "V.2026.26.1.8",
+    "V.2026.26.1.9",
+    "V.2026.26.2.0",
+    "V.2026.26.2.1",
+    "V.2026.26.2.2",
+    "V.2026.28.0.1",
+    "V.2026.28.0.2",
+    "V.2026.28.0.3",
+    "V.2026.28.0.4",
+    "V.2026.28.1.0",
+    "V.2026.28.1.1",
+    "V.2026.28.1.2",
+    "V.2026.29.0.0",
+    "V.2026.29.0.1",
+    "V.2026.29.0.2",
+    "V.2026.29.0.3",
+    "V.2026.29.1.0",
+    "V.2026.29.1.1",
+    "V.2026.29.1.2",
+    "V.2026.29.1.3",
+    "V.2026.29.1.4"
+  ],
   "routes": [
     {
-      "minimumVersion": "V.2026.28.1.1",
+      "maximumVersion": "V.2026.26.1.5",
+      "mode": "manual-bootstrap",
+      "targetVersion": "V.2026.29.1.3",
+      "reason": "MSI-era clients and early public builds do not have a verified Modern Installer path to current Safe Main."
+    },
+    {
+      "minimumVersion": "V.2026.26.1.6",
+      "maximumVersion": "V.2026.26.1.9",
+      "mode": "manual-bootstrap",
+      "targetVersion": "V.2026.29.1.3",
+      "reason": "These source versions accepted MSI/web patches, but no matching GitHub desktop assets were published."
+    },
+    {
+      "minimumVersion": "V.2026.26.2.0",
+      "maximumVersion": "V.2026.28.1.1",
+      "mode": "manual-bootstrap",
+      "targetVersion": "V.2026.29.1.3",
+      "reason": "Transitional Modern Installer and legacy scheduling paths are not accepted as unattended after field failures."
+    },
+    {
+      "minimumVersion": "V.2026.28.1.2",
+      "maximumVersion": "V.2026.29.1.1",
+      "mode": "manual-bootstrap",
+      "targetVersion": "V.2026.29.1.3",
+      "reason": "This range mixes a Web UI-only number, a source-only number, and native updater generations that failed the current Safe Main field route."
+    },
+    {
+      "minimumVersion": "V.2026.29.1.2",
       "maximumVersion": "V.2026.29.1.2",
       "mode": "safe-main-automatic",
       "artifactType": "installer-exe",
@@ -16,23 +84,16 @@
     },
     {
       "minimumVersion": "V.2026.29.1.3",
+      "maximumVersion": "V.2026.29.1.3",
       "mode": "chained-stable-automatic",
       "manifest": "stable.json",
       "targetVersion": "V.2026.29.1.4"
     },
     {
-      "minimumVersion": "V.2026.28.0.1",
-      "maximumVersion": "V.2026.28.1.0",
-      "mode": "conditional-or-manual",
-      "targetVersion": "V.2026.29.1.3",
-      "reason": "These clients accept installer EXE, but legacy scheduling is not reliable on every managed Windows environment."
-    },
-    {
-      "maximumVersion": "V.2026.26.1.9",
-      "mode": "manual-bootstrap",
-      "artifactType": "installer-exe",
-      "targetVersion": "V.2026.29.1.3",
-      "reason": "These binaries accept MSI/web patches only; a new MSI is prohibited while tunnel/helper safety cannot be guaranteed."
+      "minimumVersion": "V.2026.29.1.4",
+      "maximumVersion": "V.2026.29.1.4",
+      "mode": "stable-current",
+      "targetVersion": "V.2026.29.1.4"
     }
   ]
 }
