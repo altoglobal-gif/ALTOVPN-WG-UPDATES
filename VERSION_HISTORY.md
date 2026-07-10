@@ -7,9 +7,9 @@ Audited on 2026-07-10 from the public GitHub Releases API, update-repository tag
 | Native installed version | Route |
 |---|---|
 | Below `V.2026.28.1.1` | GitHub Release bridge is the final fallback |
-| `V.2026.28.1.1`–`V.2026.29.1.4` | Automatic in-place `latest.json` → bridge `V.2026.29.1.5` |
-| `V.2026.29.1.5` | Automatic `nextManifestUrl` → stable `V.2026.29.1.6` |
-| `V.2026.29.1.6` | Current stable |
+| `V.2026.28.1.1`–`V.2026.29.1.6` | Existing helper applies app-only bridge `V.2026.29.1.7` without UAC |
+| `V.2026.29.1.7` | Automatic `nextManifestUrl` → app-only stable `V.2026.29.1.8` |
+| `V.2026.29.1.8` | Current desktop stable; helper remains `V.2026.29.1.6` |
 
 The bridge avoids a manual reinstall for the verified native-worker generation. Very old clients remain on the explicit GitHub fallback rather than being forced through an unsafe scheduler.
 
@@ -49,6 +49,8 @@ The bridge avoids a manual reinstall for the verified native-worker generation. 
 | `29.1.4` | `ALTOVPN-WG-V.2026.29.1.4-win-x64-setup.exe` | Previous stable |
 | `29.1.5` | `ALTOVPN-WG-V.2026.29.1.5-win-x64-setup.exe` | In-place Safe Main bridge |
 | `29.1.6` | `ALTOVPN-WG-V.2026.29.1.6-win-x64-setup.exe` | Current staged-update stable |
+| `29.1.7` | `ALTOVPN-WG-V.2026.29.1.7-win-x64-app-update.exe` | App-only Safe Main; no helper payload |
+| `29.1.8` | App-only primary plus full setup fallback | UAC-free Stable; helper pinned at 29.1.6 |
 
 There is no public GitHub desktop release for `26.1.6`–`26.1.9`, `28.0.1`, or `29.0.3`.
 
@@ -77,6 +79,8 @@ There is no public GitHub desktop release for `26.1.6`–`26.1.9`, `28.0.1`, or 
 | `29.1.4` | Routed SSH scan corrective release | Previous stable |
 | `29.1.5` | Universal in-place landing target with chained manifest support | Safe Main bridge |
 | `29.1.6` | Stable completion with current feature set | Moving stable |
+| `29.1.7` | App-only payload through existing LocalSystem helper | UAC-free Safe Main |
+| `29.1.8` | App-only primary and full fallback; helper version decoupled | Current Stable |
 
 ## Rules that prevent another mixed route
 

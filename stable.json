@@ -2,34 +2,45 @@
   "schemaVersion": 1,
   "appId": "ALTOVPN-WG",
   "channel": "stable",
-  "latestVersion": "V.2026.29.1.6",
-  "fileVersion": "2026.29.1.6",
-  "minimumSupportedVersion": "V.2026.29.1.5",
-  "publishedAt": "2026-07-10T17:56:56+07:00",
-  "releaseNotesUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/blob/main/RELEASE_NOTES_v2026.29.1.6.md",
+  "latestVersion": "V.2026.29.1.8",
+  "fileVersion": "2026.29.1.8",
+  "minimumSupportedVersion": "V.2026.29.1.7",
+  "publishedAt": "2026-07-10T18:30:56+07:00",
+  "releaseNotesUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/tag/v2026.29.1.8",
   "manifestUrl": "https://api.github.com/repos/altoglobal-gif/ALTOVPN-WG-UPDATES/contents/stable.json?ref=main",
   "changeSummary": [
-    "Completed: Automatic Safe Main bridge to moving Stable update sequence.",
-    "Preserved: SSH pivot rescan with Linux, MikroTik RouterOS, and Windows auto-detection.",
-    "Preserved: Remote MAC address and IEEE OUI Manufacturer inventory.",
-    "Preserved: Profiles, managed configs, private keys, tunnel preflight, and native restart coordination."
+    "Completed: UAC-free app-only Safe Main to Stable update sequence.",
+    "Preserved: Existing helper binary and service without stop, replacement, or reinstall.",
+    "Preserved: SSH pivot rescan, OS detection, MAC/OUI inventory, scanner, Tray Panel, and CIDR List.",
+    "Fallback: Full setup remains available only for missing or unusable helpers."
   ],
   "artifact": {
     "type": "installer-exe",
     "component": "desktop-client",
     "platform": "win-x64",
-    "fileName": "ALTOVPN-WG-V.2026.29.1.6-win-x64-setup.exe",
-    "downloadUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/download/v2026.29.1.6/ALTOVPN-WG-V.2026.29.1.6-win-x64-setup.exe",
-    "sha256": "FA1D62B5944B760AD9E38998ED26556046A651DCF4FC9F8F5B14F315C1D280FA",
-    "sizeBytes": 175976616
+    "fileName": "ALTOVPN-WG-V.2026.29.1.8-win-x64-app-update.exe",
+    "downloadUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/download/v2026.29.1.8/ALTOVPN-WG-V.2026.29.1.8-win-x64-app-update.exe",
+    "sha256": "BDB4FF6F9A84AD3EF4EDD79EB2D42FCD9E9C6222A26D458C6CAE0B88898CCBB1",
+    "sizeBytes": 146085544
+  },
+  "fallbackArtifact": {
+    "type": "installer-exe",
+    "component": "desktop-client-and-helper",
+    "platform": "win-x64",
+    "fileName": "ALTOVPN-WG-V.2026.29.1.8-win-x64-setup.exe",
+    "downloadUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/download/v2026.29.1.8/ALTOVPN-WG-V.2026.29.1.8-win-x64-setup.exe",
+    "sha256": "E50A3627BBD80BA83F6CE908FC69FC16B762828523286CAEEBBF51548BC035B2",
+    "sizeBytes": 175977640
   },
   "updatePolicy": {
-    "requiresAdmin": true,
-    "installMode": "helper-installer",
+    "requiresAdmin": false,
+    "installMode": "existing-helper-app-only",
+    "touchesHelper": false,
+    "helperVersion": "V.2026.29.1.6",
     "restartRequired": true
   },
   "source": {
     "repository": "altoglobal-gif/ALTOVPN-WG-UPDATES",
-    "tag": "v2026.29.1.6"
+    "tag": "v2026.29.1.8"
   }
 }

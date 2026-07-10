@@ -1,5 +1,17 @@
 # Changelog
 
+## V.2026.29.1.8 - 2026-07-10
+
+- Completed the UAC-free app-only Bridge → Stable path.
+- Kept the unchanged helper at `V.2026.29.1.6`; primary payload contains no helper files.
+- Published full setup only as the final fallback.
+
+## V.2026.29.1.7 - 2026-07-10
+
+- Added app-only Safe Main scheduled by the existing LocalSystem helper without UAC.
+- Stopped coupling helper version bumps to ordinary desktop releases.
+- Added manifest/release-gate declarations that forbid helper replacement in app-only artifacts.
+
 ## V.2026.29.1.6 - 2026-07-10
 
 - Completed the automatic in-place Bridge → Stable route.

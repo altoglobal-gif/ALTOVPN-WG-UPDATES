@@ -2,8 +2,8 @@
   "schemaVersion": 3,
   "versionAuthority": "native-desktop-file-version",
   "automaticUpdateFloor": "V.2026.28.1.1",
-  "safeLandingTarget": "V.2026.29.1.5",
-  "stableTarget": "V.2026.29.1.6",
+  "safeLandingTarget": "V.2026.29.1.7",
+  "stableTarget": "V.2026.29.1.8",
   "legacyManifest": "latest.json",
   "stableManifest": "stable.json",
   "manualBootstrapUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/blob/main/LEGACY_BOOTSTRAP.md",
@@ -47,7 +47,9 @@
     "V.2026.29.1.3",
     "V.2026.29.1.4",
     "V.2026.29.1.5",
-    "V.2026.29.1.6"
+    "V.2026.29.1.6",
+    "V.2026.29.1.7",
+    "V.2026.29.1.8"
   ],
   "routes": [
     {
@@ -72,23 +74,23 @@
     },
     {
       "minimumVersion": "V.2026.28.1.1",
-      "maximumVersion": "V.2026.29.1.4",
+      "maximumVersion": "V.2026.29.1.6",
       "mode": "safe-main-automatic",
       "artifactType": "installer-exe",
-      "targetVersion": "V.2026.29.1.5"
+      "targetVersion": "V.2026.29.1.7"
     },
     {
-      "minimumVersion": "V.2026.29.1.5",
-      "maximumVersion": "V.2026.29.1.5",
+      "minimumVersion": "V.2026.29.1.7",
+      "maximumVersion": "V.2026.29.1.7",
       "mode": "chained-stable-automatic",
       "manifest": "stable.json",
-      "targetVersion": "V.2026.29.1.6"
+      "targetVersion": "V.2026.29.1.8"
     },
     {
-      "minimumVersion": "V.2026.29.1.6",
-      "maximumVersion": "V.2026.29.1.6",
+      "minimumVersion": "V.2026.29.1.8",
+      "maximumVersion": "V.2026.29.1.8",
       "mode": "stable-current",
-      "targetVersion": "V.2026.29.1.6"
+      "targetVersion": "V.2026.29.1.8"
     }
   ]
 }
