@@ -1,5 +1,17 @@
 # Changelog
 
+## V.2026.29.1.4 - 2026-07-10
+
+### Corrective Patch
+
+- Fixed Trust & Scan stopping after inventory instead of rescanning through the SSH device.
+- Added automatic Linux, MikroTik RouterOS, and Windows OpenSSH command selection.
+- Merged remote neighbor/ARP MAC addresses and IEEE OUI Manufacturer values into the client list.
+- Added Scan again through SSH with one-time credentials and repeated host-key confirmation.
+- Capped SSH pivot rescans at 256 native-validated IPv4 targets.
+- Passed 29 automated tests plus host/installer/JavaScript validation.
+- Modern Installer EXE only; no MSI and no Git LFS.
+
 ## V.2026.29.1.3 - 2026-07-10
 
 ### Safe Main

@@ -2,24 +2,27 @@
   "schemaVersion": 1,
   "appId": "ALTOVPN-WG",
   "channel": "stable",
-  "latestVersion": "V.2026.29.1.3",
-  "fileVersion": "2026.29.1.3",
+  "latestVersion": "V.2026.29.1.4",
+  "fileVersion": "2026.29.1.4",
   "minimumSupportedVersion": "V.2026.29.1.3",
-  "publishedAt": "2026-07-10T16:31:30+07:00",
-  "releaseNotesUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/blob/main/RELEASE_NOTES_v2026.29.1.3.md",
+  "publishedAt": "2026-07-10T16:56:29+07:00",
+  "releaseNotesUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/blob/main/RELEASE_NOTES_v2026.29.1.4.md",
   "manifestUrl": "https://api.github.com/repos/altoglobal-gif/ALTOVPN-WG-UPDATES/contents/stable.json?ref=main",
   "changeSummary": [
-    "Safe Main is installed and the moving stable channel is active.",
-    "No release newer than V.2026.29.1.3 is currently published."
+    "Fixed: Trust & Scan now rescans the validated CIDR from the SSH device.",
+    "Added: Automatic Linux, MikroTik RouterOS, and Windows OpenSSH selection.",
+    "Fixed: Remote neighbor and ARP data now populates MAC address and IEEE OUI Manufacturer.",
+    "Added: Scan again through SSH with fresh credentials and host-key confirmation.",
+    "Changed: SSH pivot scans remain bounded to 256 native-validated IPv4 targets."
   ],
   "artifact": {
     "type": "installer-exe",
     "component": "desktop-client",
     "platform": "win-x64",
-    "fileName": "ALTOVPN-WG-V.2026.29.1.3-win-x64-setup.exe",
-    "downloadUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/download/v2026.29.1.3/ALTOVPN-WG-V.2026.29.1.3-win-x64-setup.exe",
-    "sha256": "8BCE137AC2F80991E020AD30DCBF8061C28AC92DC7659E0772DAF9A5CAB071B7",
-    "sizeBytes": 175965352
+    "fileName": "ALTOVPN-WG-V.2026.29.1.4-win-x64-setup.exe",
+    "downloadUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/download/v2026.29.1.4/ALTOVPN-WG-V.2026.29.1.4-win-x64-setup.exe",
+    "sha256": "4CC2F1AA1F4310C457DC5BCB609A6849E737BB21D4653C9E16BACC3573BFE52B",
+    "sizeBytes": 175976616
   },
   "updatePolicy": {
     "requiresAdmin": true,
@@ -28,6 +31,6 @@
   },
   "source": {
     "repository": "altoglobal-gif/ALTOVPN-WG-UPDATES",
-    "tag": "v2026.29.1.3"
+    "tag": "v2026.29.1.4"
   }
 }
