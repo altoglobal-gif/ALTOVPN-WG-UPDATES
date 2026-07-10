@@ -2,6 +2,7 @@
   "schemaVersion": 1,
   "automaticUpdateFloor": "V.2026.28.1.1",
   "stableTarget": "V.2026.29.0.2",
+  "manualBootstrapUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/blob/main/LEGACY_BOOTSTRAP.md",
   "routes": [
     {
       "minimumVersion": "V.2026.28.1.1",
@@ -9,10 +10,10 @@
       "artifactType": "installer-exe"
     },
     {
-      "minimumVersion": "V.2026.28.0.1",
+      "minimumVersion": "V.2026.26.2.1",
       "maximumVersion": "V.2026.28.1.0",
       "mode": "conditional-or-manual",
-      "reason": "The legacy scheduler may be blocked when PowerShell execution is denied."
+      "reason": "These clients accept installer EXE, but older scheduler and lifecycle implementations are not reliable on every managed device."
     },
     {
       "maximumVersion": "V.2026.26.1.9",
