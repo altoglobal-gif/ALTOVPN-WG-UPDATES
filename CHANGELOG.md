@@ -1,5 +1,13 @@
 # Changelog
 
+## V.2026.28.1.1 - 2026-07-10
+
+### Critical Recovery
+
+- Replaced the PowerShell update worker with a self-contained native helper worker.
+- Published a web UI recovery patch so `V.2026.28.0.4` clients can receive a Download Full Installer path without invoking blocked PowerShell.
+- Full MSI includes the major Settings/Admin Mode redesign and update-on-exit behavior.
+
 ## V.2026.28.1.0 - 2026-07-10
 
 ### Major Update
