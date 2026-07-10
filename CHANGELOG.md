@@ -1,5 +1,28 @@
 # Changelog
 
+## V.2026.29.0.0 - 2026-07-10
+
+### Added
+
+- Added VPN Destination Networks with readable CIDR chips and route-mode warnings.
+- Restored the Modern Installer `.exe` as the Windows updater artifact.
+- Added the Network VPN Scanner roadmap.
+
+### Changed
+
+- Refined Main Window, Tray Panel, and What's New UX.
+- Replaced full-state traffic pushes with compact telemetry updates.
+- Consolidated WireGuard health polling and moved DNS diagnostics off PowerShell.
+
+### Fixed
+
+- Prevented overlapping timer callbacks and repeated unchanged rendering.
+- Improved installer file replacement while the old client closes.
+
+### Removed
+
+- Removed MSI from the primary updater path.
+
 ## V.2026.28.1.2 - 2026-07-10
 
 ### Added
