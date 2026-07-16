@@ -1,5 +1,21 @@
 # Changelog
 
+## V.2026.29.2.2 Beta - 2026-07-16
+
+### Added and changed
+
+- Published the React 19 Main window refactor and responsive `920 x 680` safety floor to the opt-in Beta channel.
+- Made CIDR compatibility visible for every selected profile and added a prominent Connect block plus gateway NAT plan when local and VPN destination networks overlap.
+- Refreshed local CIDRs after adapter/address changes, immediately before Connect, and across active gatewayless adapters while excluding WireGuard/Wintun and link-local interfaces.
+- Persisted Auto Disconnect deadlines in the helper with one protected extension and normal-exit fallback for older helper installations.
+
+### Security and release policy
+
+- Hardened helper schedule storage ACLs, monotonic deadlines, active-tunnel cancellation/policy rejection, and installed `ALTOVPN-WG.exe` caller validation.
+- Bumped both App and Helper to `V.2026.29.2.2`; Beta uses the Full Setup artifact because this release changes the helper.
+- Full Setup includes the pinned signed WireGuard MSI; App Update is published as a release asset but is not the Beta manifest target.
+- Stable remains `V.2026.29.2.1` while this build is observed in Beta.
+
 ## V.2026.29.2.1 Main / Stable - 2026-07-16
 
 ### Major
