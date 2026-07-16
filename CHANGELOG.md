@@ -1,5 +1,22 @@
 # Changelog
 
+## V.2026.29.2.1 Main / Stable - 2026-07-16
+
+### Major
+
+- Promoted the assisted Portal enrollment workflow and full Main/Tray UX refresh to the production target.
+- Elevated VPN Destination Networks so users can identify the routed Site IP/CIDR immediately.
+- Exposed Stable/Beta channel selection directly in Settings > Software Update.
+- Published byte-identical App Update and Full Setup Modern Installer EXEs across Dev, Beta, and Stable.
+- Added official pinned WireGuard for Windows to Full Setup for clean-machine installation; App Update remains App-only.
+
+### Adoption policy
+
+- Retained the verified Safe Main bridge and chained every compatible automatic client to Stable `V.2026.29.2.1`.
+- Routed legacy clients to the current Full Setup bootstrap.
+- Kept Helper unchanged at `V.2026.29.1.6`.
+- Recorded the existing limitation that server metadata cannot add a hard runtime lock to old installed clients.
+
 ## V.2026.29.2.0 Dev - 2026-07-16
 
 ### Major

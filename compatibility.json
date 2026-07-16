@@ -3,8 +3,9 @@
   "versionAuthority": "native-desktop-file-version",
   "automaticUpdateFloor": "V.2026.28.1.1",
   "safeLandingTarget": "V.2026.29.1.7",
-  "stableTarget": "V.2026.29.1.8",
-  "devTarget": "V.2026.29.2.0",
+  "stableTarget": "V.2026.29.2.1",
+  "betaTarget": "V.2026.29.2.1",
+  "devTarget": "V.2026.29.2.1",
   "legacyManifest": "latest.json",
   "stableManifest": "stable.json",
   "manualBootstrapUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/blob/main/LEGACY_BOOTSTRAP.md",
@@ -51,27 +52,28 @@
     "V.2026.29.1.6",
     "V.2026.29.1.7",
     "V.2026.29.1.8",
-    "V.2026.29.2.0"
+    "V.2026.29.2.0",
+    "V.2026.29.2.1"
   ],
   "routes": [
     {
       "maximumVersion": "V.2026.26.1.5",
       "mode": "manual-bootstrap",
-      "targetVersion": "V.2026.29.1.5",
+      "targetVersion": "V.2026.29.2.1",
       "reason": "MSI-era clients and early public builds do not have a verified Modern Installer path to current Safe Main."
     },
     {
       "minimumVersion": "V.2026.26.1.6",
       "maximumVersion": "V.2026.26.1.9",
       "mode": "manual-bootstrap",
-      "targetVersion": "V.2026.29.1.5",
+      "targetVersion": "V.2026.29.2.1",
       "reason": "These source versions accepted MSI/web patches, but no matching GitHub desktop assets were published."
     },
     {
       "minimumVersion": "V.2026.26.2.0",
       "maximumVersion": "V.2026.28.1.0",
       "mode": "manual-bootstrap",
-      "targetVersion": "V.2026.29.1.5",
+      "targetVersion": "V.2026.29.2.1",
       "reason": "Transitional Modern Installer and legacy scheduling paths are not accepted as unattended after field failures."
     },
     {
@@ -83,23 +85,16 @@
     },
     {
       "minimumVersion": "V.2026.29.1.7",
-      "maximumVersion": "V.2026.29.1.7",
+      "maximumVersion": "V.2026.29.2.0",
       "mode": "chained-stable-automatic",
       "manifest": "stable.json",
-      "targetVersion": "V.2026.29.1.8"
+      "targetVersion": "V.2026.29.2.1"
     },
     {
-      "minimumVersion": "V.2026.29.1.8",
-      "maximumVersion": "V.2026.29.1.8",
+      "minimumVersion": "V.2026.29.2.1",
+      "maximumVersion": "V.2026.29.2.1",
       "mode": "stable-current",
-      "targetVersion": "V.2026.29.1.8"
-    },
-    {
-      "minimumVersion": "V.2026.29.2.0",
-      "maximumVersion": "V.2026.29.2.0",
-      "mode": "dev-current",
-      "manifest": "dev.json",
-      "targetVersion": "V.2026.29.2.0"
+      "targetVersion": "V.2026.29.2.1"
     }
   ]
 }

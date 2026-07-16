@@ -2,36 +2,34 @@
   "schemaVersion": 1,
   "appId": "ALTOVPN-WG",
   "channel": "dev",
-  "latestVersion": "V.2026.29.2.0",
-  "fileVersion": "2026.29.2.0",
-  "minimumSupportedVersion": "V.2026.29.1.8",
-  "publishedAt": "2026-07-16T09:23:49+07:00",
-  "releaseNotesUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/tag/v2026.29.2.0",
+  "latestVersion": "V.2026.29.2.1",
+  "fileVersion": "2026.29.2.1",
+  "minimumSupportedVersion": "V.2026.29.1.7",
+  "publishedAt": "2026-07-16T10:43:48+07:00",
+  "releaseNotesUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/tag/v2026.29.2.1",
   "manifestUrl": "https://api.github.com/repos/altoglobal-gif/ALTOVPN-WG-UPDATES/contents/dev.json?ref=dev",
   "changeSummary": [
-    "Major: Assisted import generates a unique local client key when a Portal config omits PrivateKey.",
-    "Workflow: The generated PublicKey is shown for Portal registration; Connect stays blocked until Portal Updated is confirmed.",
-    "Fixed: Drag/drop validation failures are visible and app-only updates preserve the installed full setup.",
-    "Admin: Stable/Beta channel selection and context-aware installer maintenance are included.",
-    "Security: PrivateKeys remain local; helper stays unchanged at V.2026.29.1.6."
+    "Dev, Beta, and Stable are synchronized on the promoted V.2026.29.2.1 Main baseline.",
+    "Assisted Portal enrollment, Main/Tray refresh, direct channel selection, and bundled-WireGuard Full Setup are included.",
+    "PrivateKeys remain local and the helper remains unchanged at V.2026.29.1.6."
   ],
   "artifact": {
     "type": "installer-exe",
     "component": "desktop-client",
     "platform": "win-x64",
-    "fileName": "ALTOVPN-WG-V.2026.29.2.0-win-x64-app-update.exe",
-    "downloadUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/download/v2026.29.2.0/ALTOVPN-WG-V.2026.29.2.0-win-x64-app-update.exe",
-    "sha256": "F7CFC40FF22D39B206CF40601F2AB430E876A7CC3E207B75FB7219AB372D5484",
-    "sizeBytes": 146096035
+    "fileName": "ALTOVPN-WG-V.2026.29.2.1-win-x64-app-update.exe",
+    "downloadUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/download/v2026.29.2.1/ALTOVPN-WG-V.2026.29.2.1-win-x64-app-update.exe",
+    "sha256": "148EE751651EC771532DD6084DE3D0DD1C73A9D3AEDA81678D754D02A74CAA53",
+    "sizeBytes": 146098595
   },
   "fallbackArtifact": {
     "type": "installer-exe",
-    "component": "desktop-client-and-helper",
+    "component": "desktop-client-helper-and-wireguard",
     "platform": "win-x64",
-    "fileName": "ALTOVPN-WG-V.2026.29.2.0-win-x64-setup.exe",
-    "downloadUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/download/v2026.29.2.0/ALTOVPN-WG-V.2026.29.2.0-win-x64-setup.exe",
-    "sha256": "D55CEB52A0F8FF2E61D042A96264DBCDDAE82466B0CD400C241D151D753E6642",
-    "sizeBytes": 175989667
+    "fileName": "ALTOVPN-WG-V.2026.29.2.1-win-x64-setup.exe",
+    "downloadUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/download/v2026.29.2.1/ALTOVPN-WG-V.2026.29.2.1-win-x64-setup.exe",
+    "sha256": "F9F2348327C274A6AD5A5623BBB534F7B2CABA6190B355040ED21F638499E05D",
+    "sizeBytes": 178902947
   },
   "updatePolicy": {
     "requiresAdmin": false,
@@ -42,6 +40,6 @@
   },
   "source": {
     "repository": "altoglobal-gif/ALTOVPN-WG-UPDATES",
-    "tag": "v2026.29.2.0"
+    "tag": "v2026.29.2.1"
   }
 }
