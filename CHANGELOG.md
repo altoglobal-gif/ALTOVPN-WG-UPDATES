@@ -1,5 +1,23 @@
 # Changelog
 
+## V.2026.29.2.0 Dev - 2026-07-16
+
+### Major
+
+- Added assisted client-only enrollment for WireGuard Portal configs that omit `PrivateKey`.
+- Generates one unique key pair per config, inserts the PrivateKey only into the managed local config, and exposes only the PublicKey for Portal registration.
+- Persists a visible `Waiting for Portal` state and blocks Connect until the user selects `Portal Updated`.
+- Makes Drag/Drop validation failures visible instead of silently returning to the dashboard.
+- Adds protected Stable/Beta channel selection and context-aware installer maintenance.
+- Prevents app-only updates from replacing the installed full maintenance setup.
+
+### Release policy
+
+- Dev prerelease only; Beta and Stable remain at `V.2026.29.1.8` pending observation.
+- Helper remains unchanged at `V.2026.29.1.6`.
+- Promotion must reuse these exact artifacts and SHA256 values without rebuilding.
+- Artifacts are currently unsigned, and Full Setup still requires official WireGuard to be installed separately.
+
 ## V.2026.29.1.8 - 2026-07-10
 
 - Completed the UAC-free app-only Bridge → Stable path.

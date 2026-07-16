@@ -1,5 +1,7 @@
 # ALTOVPN-WG version and updater history
 
+Dev candidate added on 2026-07-16: `V.2026.29.2.0` assisted Portal enrollment major. Stable remains `V.2026.29.1.8` until Dev/Beta promotion gates complete.
+
 Audited on 2026-07-10 from the public GitHub Releases API, update-repository tags/manifests, and native source history. “Source version” alone does not mean an installable client was released.
 
 ## Authoritative route now
@@ -51,6 +53,7 @@ The bridge avoids a manual reinstall for the verified native-worker generation. 
 | `29.1.6` | `ALTOVPN-WG-V.2026.29.1.6-win-x64-setup.exe` | Current staged-update stable |
 | `29.1.7` | `ALTOVPN-WG-V.2026.29.1.7-win-x64-app-update.exe` | App-only Safe Main; no helper payload |
 | `29.1.8` | App-only primary plus full setup fallback | UAC-free Stable; helper pinned at 29.1.6 |
+| `29.2.0` | App-only Dev primary plus full setup fallback | Assisted Portal enrollment Major; helper pinned at 29.1.6 |
 
 There is no public GitHub desktop release for `26.1.6`–`26.1.9`, `28.0.1`, or `29.0.3`.
 

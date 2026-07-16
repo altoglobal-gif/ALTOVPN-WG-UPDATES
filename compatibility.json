@@ -4,6 +4,7 @@
   "automaticUpdateFloor": "V.2026.28.1.1",
   "safeLandingTarget": "V.2026.29.1.7",
   "stableTarget": "V.2026.29.1.8",
+  "devTarget": "V.2026.29.2.0",
   "legacyManifest": "latest.json",
   "stableManifest": "stable.json",
   "manualBootstrapUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/blob/main/LEGACY_BOOTSTRAP.md",
@@ -49,7 +50,8 @@
     "V.2026.29.1.5",
     "V.2026.29.1.6",
     "V.2026.29.1.7",
-    "V.2026.29.1.8"
+    "V.2026.29.1.8",
+    "V.2026.29.2.0"
   ],
   "routes": [
     {
@@ -91,6 +93,13 @@
       "maximumVersion": "V.2026.29.1.8",
       "mode": "stable-current",
       "targetVersion": "V.2026.29.1.8"
+    },
+    {
+      "minimumVersion": "V.2026.29.2.0",
+      "maximumVersion": "V.2026.29.2.0",
+      "mode": "dev-current",
+      "manifest": "dev.json",
+      "targetVersion": "V.2026.29.2.0"
     }
   ]
 }
