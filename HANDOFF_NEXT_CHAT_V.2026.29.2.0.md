@@ -26,10 +26,16 @@ Beta and Stable promotion must reuse those exact files and digests. Never rebuil
 
 ## Remaining gates
 
-- Verify the public Dev raw manifest and both release downloads by HTTP 200, exact downloaded size, and SHA256.
 - Smoke install/update with every tunnel disconnected.
 - Exercise missing-PrivateKey Drop -> Generate & Import -> Copy PublicKey -> Portal Updated -> Connect.
 - Observe Dev, then promote the identical artifacts to Beta; observe Beta before Stable.
+
+## Public verification completed
+
+- Raw `dev.json` returned `V.2026.29.2.0` from the Dev branch.
+- Both GitHub release assets returned HTTP 200.
+- Both assets were downloaded back from GitHub; byte sizes and SHA256 values matched this handoff and `dev.json` exactly.
+- GitHub Release API digests matched both expected SHA256 values.
 
 ## Known limitations
 
