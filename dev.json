@@ -12,7 +12,7 @@
     "Dev and Beta target the verified V.2026.29.2.2 helper-changing artifact set.",
     "React/responsive Main UI, visible CIDR compatibility, and gateway NAT guidance are included.",
     "Protected persistent Auto Disconnect and helper installed-caller validation are included.",
-    "Stable remains V.2026.29.2.1 during Beta observation."
+    "Stable was promoted to the same verified V.2026.29.2.2 Full Setup artifact."
   ],
   "artifact": {
     "type": "installer-exe",

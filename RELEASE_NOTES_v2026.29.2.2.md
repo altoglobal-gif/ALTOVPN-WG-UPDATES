@@ -1,4 +1,4 @@
-# ALTOVPN-WG V.2026.29.2.2 Beta
+# ALTOVPN-WG V.2026.29.2.2 Stable
 
 ## Highlights
 
@@ -19,7 +19,7 @@
 - Beta updater target: `ALTOVPN-WG-V.2026.29.2.2-win-x64-setup.exe`.
 - Full Setup contains App `V.2026.29.2.2`, Helper `V.2026.29.2.2`, and official WireGuard for Windows `amd64 1.1`.
 - Installation is blocked while any WireGuard tunnel is active.
-- Stable remains `V.2026.29.2.1` during Beta observation.
+- Promoted to Stable on 2026-07-21 with the exact Beta-observed Full Setup artifact.
 
 ## Gateway NAT requirement
 

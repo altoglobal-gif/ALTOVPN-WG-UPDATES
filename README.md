@@ -6,12 +6,12 @@ This repository is intentionally separate from the application source tree so th
 
 ## Current Channel
 
-- Production channel: `stable` at `V.2026.29.2.1`
+- Production channel: `stable` at `V.2026.29.2.2`
 - Opt-in Beta channel: `V.2026.29.2.2`
 - Legacy/Safe Main manifest: `latest.json`
 - Moving stable manifest: `stable.json`
 - Safe Main bridge: `V.2026.29.1.7` app-only
-- Moving stable: `V.2026.29.2.1` app-only
+- Moving stable: `V.2026.29.2.2` Full Setup
 - Automatic in-place floor: `V.2026.28.1.1`; older native clients use GitHub Release only as the final fallback
 - Artifact type: Modern Installer `installer-exe`; new MSI releases are prohibited
 

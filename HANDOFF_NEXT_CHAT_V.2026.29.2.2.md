@@ -5,7 +5,7 @@
 - Source commit: `0f5ef6e347a4461fa3fbbb48a264f239208992fb`.
 - Source `dev` and `beta` branches are byte-aligned at that commit; `main` remains the accepted Stable baseline.
 - App and Helper: `V.2026.29.2.2`.
-- Stable: unchanged `V.2026.29.2.1`.
+- Stable: promoted to `V.2026.29.2.2` on 2026-07-21.
 
 ## Artifact invariants
 
@@ -18,10 +18,10 @@
 ## Channel behavior
 
 - `beta.json` and `dev.json` target the Full Setup because this release changes the helper.
-- `stable.json` and `latest.json` remain unchanged.
+- `stable.json` targets the same verified Full Setup artifact. `latest.json` remains the Safe Main bridge.
 - `minimumSupportedVersion` remains `V.2026.29.1.7` so existing opt-in clients receive the update instead of being classified unsupported.
 - Full Setup refuses installation while a `WireGuardTunnel$*` service is active.
 
 ## Promotion rule
 
-If accepted, promote these exact release asset bytes to Stable. Do not rebuild. Fast-forward source `main` to the accepted Beta commit, then update `stable.json` while preserving the Safe Main landing manifest.
+Promotion was accepted on 2026-07-21. Do not rebuild; keep Stable on the exact verified release asset bytes and preserve the Safe Main landing manifest.

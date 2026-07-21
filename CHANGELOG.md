@@ -14,7 +14,7 @@
 - Hardened helper schedule storage ACLs, monotonic deadlines, active-tunnel cancellation/policy rejection, and installed `ALTOVPN-WG.exe` caller validation.
 - Bumped both App and Helper to `V.2026.29.2.2`; Beta uses the Full Setup artifact because this release changes the helper.
 - Full Setup includes the pinned signed WireGuard MSI; App Update is published as a release asset but is not the Beta manifest target.
-- Stable remains `V.2026.29.2.1` while this build is observed in Beta.
+- Promoted to Stable on 2026-07-21 using the exact verified Full Setup artifact bytes.
 
 ## V.2026.29.2.1 Main / Stable - 2026-07-16
 

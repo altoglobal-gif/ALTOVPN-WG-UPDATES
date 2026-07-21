@@ -13,7 +13,7 @@
     "CIDR compatibility is always visible; overlapping local/VPN destinations block Connect and show a gateway NAT plan.",
     "Auto Disconnect deadlines persist in the protected helper and remain enforced after normal app exit.",
     "Helper commands now enforce installed-caller validation, monotonic deadlines, and active-tunnel policy protection.",
-    "This helper-changing Beta uses Full Setup with App, Helper, and pinned official WireGuard."
+    "This helper-changing release uses Full Setup with App, Helper, and pinned official WireGuard."
   ],
   "artifact": {
     "type": "installer-exe",

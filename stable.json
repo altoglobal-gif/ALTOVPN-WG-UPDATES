@@ -2,46 +2,37 @@
   "schemaVersion": 1,
   "appId": "ALTOVPN-WG",
   "channel": "stable",
-  "latestVersion": "V.2026.29.2.1",
-  "fileVersion": "2026.29.2.1",
+  "latestVersion": "V.2026.29.2.2",
+  "fileVersion": "2026.29.2.2",
   "minimumSupportedVersion": "V.2026.29.1.7",
-  "publishedAt": "2026-07-16T10:43:48+07:00",
-  "releaseNotesUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/tag/v2026.29.2.1",
+  "publishedAt": "2026-07-21T12:13:09+07:00",
+  "releaseNotesUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/tag/v2026.29.2.2",
   "manifestUrl": "https://api.github.com/repos/altoglobal-gif/ALTOVPN-WG-UPDATES/contents/stable.json?ref=main",
   "changeSummary": [
-    "Main release: Refreshed Main window and Tray panel around VPN status, sites, destination networks, and primary connection actions.",
-    "Portal workflow: Generates a local client key for configs without PrivateKey and shows the PublicKey that must be registered before Connect.",
-    "Channels: Stable and Beta can now be selected directly in Settings > Software Update.",
-    "Full Setup: Bundles the unchanged helper and pinned official WireGuard for clean-machine installation.",
-    "Required baseline: Every verified automatic route converges on this Stable target; older legacy clients use Full Setup."
+    "Stable promotion: React Main window refactor with protected responsive sizing and refreshed profile flow.",
+    "CIDR compatibility is always visible; overlapping local/VPN destinations block Connect and show a gateway NAT plan.",
+    "Auto Disconnect deadlines persist in the protected helper and remain enforced after normal app exit.",
+    "Helper commands now enforce installed-caller validation, monotonic deadlines, and active-tunnel policy protection.",
+    "This helper-changing Stable release uses Full Setup with App, Helper, and pinned official WireGuard."
   ],
   "artifact": {
     "type": "installer-exe",
-    "component": "desktop-client",
-    "platform": "win-x64",
-    "fileName": "ALTOVPN-WG-V.2026.29.2.1-win-x64-app-update.exe",
-    "downloadUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/download/v2026.29.2.1/ALTOVPN-WG-V.2026.29.2.1-win-x64-app-update.exe",
-    "sha256": "148EE751651EC771532DD6084DE3D0DD1C73A9D3AEDA81678D754D02A74CAA53",
-    "sizeBytes": 146098595
-  },
-  "fallbackArtifact": {
-    "type": "installer-exe",
     "component": "desktop-client-helper-and-wireguard",
     "platform": "win-x64",
-    "fileName": "ALTOVPN-WG-V.2026.29.2.1-win-x64-setup.exe",
-    "downloadUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/download/v2026.29.2.1/ALTOVPN-WG-V.2026.29.2.1-win-x64-setup.exe",
-    "sha256": "F9F2348327C274A6AD5A5623BBB534F7B2CABA6190B355040ED21F638499E05D",
-    "sizeBytes": 178902947
+    "fileName": "ALTOVPN-WG-V.2026.29.2.2-win-x64-setup.exe",
+    "downloadUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/download/v2026.29.2.2/ALTOVPN-WG-V.2026.29.2.2-win-x64-setup.exe",
+    "sha256": "5737B1F44914023DB64567FC04448355F1FF1CEFECD73457C0CCF6ED074F3F60",
+    "sizeBytes": 178972067
   },
   "updatePolicy": {
-    "requiresAdmin": false,
-    "installMode": "existing-helper-app-only",
-    "touchesHelper": false,
-    "helperVersion": "V.2026.29.1.6",
+    "requiresAdmin": true,
+    "installMode": "helper-installer",
+    "touchesHelper": true,
+    "helperVersion": "V.2026.29.2.2",
     "restartRequired": true
   },
   "source": {
     "repository": "altoglobal-gif/ALTOVPN-WG-UPDATES",
-    "tag": "v2026.29.2.1"
+    "tag": "v2026.29.2.2"
   }
 }

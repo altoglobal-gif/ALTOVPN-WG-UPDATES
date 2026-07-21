@@ -1,6 +1,6 @@
 # ALTOVPN-WG version and updater history
 
-Main/Stable remains `V.2026.29.2.1`. Opt-in Beta advanced on 2026-07-16 to helper-changing `V.2026.29.2.2` with protected Auto Disconnect, responsive React UI, and CIDR conflict/NAT guidance.
+Main/Stable advanced on 2026-07-21 to helper-changing `V.2026.29.2.2` with protected Auto Disconnect, responsive React UI, and CIDR conflict/NAT guidance.
 
 Audited on 2026-07-10 from the public GitHub Releases API, update-repository tags/manifests, and native source history. “Source version” alone does not mean an installable client was released.
 
@@ -8,11 +8,11 @@ Audited on 2026-07-10 from the public GitHub Releases API, update-repository tag
 
 | Native installed version | Route |
 |---|---|
-| Below `V.2026.28.1.1` | `V.2026.29.2.1` Full Setup is the final fallback |
+| Below `V.2026.28.1.1` | `V.2026.29.2.2` Full Setup is the final fallback |
 | `V.2026.28.1.1`–`V.2026.29.1.6` | Existing helper applies app-only bridge `V.2026.29.1.7` without UAC |
-| `V.2026.29.1.7`–`V.2026.29.2.0` | Automatic `nextManifestUrl` → app-only stable `V.2026.29.2.1` |
-| `V.2026.29.2.1` | Current desktop stable; helper remains `V.2026.29.1.6` |
-| Beta opt-in | Full Setup `V.2026.29.2.2`; App and Helper advance together |
+| `V.2026.29.1.7`-`V.2026.29.2.1` | Automatic `nextManifestUrl` -> Full Setup stable `V.2026.29.2.2` |
+| `V.2026.29.2.2` | Current desktop stable; App and Helper advance together |
+| Beta opt-in | Full Setup `V.2026.29.2.2`; same artifact as Stable |
 
 The bridge avoids a manual reinstall for the verified native-worker generation. Very old clients remain on the explicit GitHub fallback rather than being forced through an unsafe scheduler.
 
@@ -55,8 +55,8 @@ The bridge avoids a manual reinstall for the verified native-worker generation. 
 | `29.1.7` | `ALTOVPN-WG-V.2026.29.1.7-win-x64-app-update.exe` | App-only Safe Main; no helper payload |
 | `29.1.8` | App-only primary plus full setup fallback | UAC-free Stable; helper pinned at 29.1.6 |
 | `29.2.0` | App-only Dev primary plus full setup fallback | Assisted Portal enrollment Major; helper pinned at 29.1.6 |
-| `29.2.1` | App-only primary plus bundled-WireGuard Full Setup | Current Main/Stable; helper pinned at 29.1.6 |
-| `29.2.2` | Helper-changing Full Setup primary plus optional App Update asset | Current opt-in Beta; App/Helper 29.2.2 |
+| `29.2.1` | App-only primary plus bundled-WireGuard Full Setup | Previous Main/Stable; helper pinned at 29.1.6 |
+| `29.2.2` | Helper-changing Full Setup primary plus optional App Update asset | Current Main/Stable; App/Helper 29.2.2 |
 
 There is no public GitHub desktop release for `26.1.6`–`26.1.9`, `28.0.1`, or `29.0.3`.
 
@@ -87,7 +87,8 @@ There is no public GitHub desktop release for `26.1.6`–`26.1.9`, `28.0.1`, or 
 | `29.1.6` | Stable completion with current feature set | Moving stable |
 | `29.1.7` | App-only payload through existing LocalSystem helper | UAC-free Safe Main |
 | `29.1.8` | App-only primary and full fallback; helper version decoupled | Previous Stable |
-| `29.2.1` | Direct Stable/Beta selection and bundled-WireGuard Full Setup | Current Main/Stable |
+| `29.2.1` | Direct Stable/Beta selection and bundled-WireGuard Full Setup | Previous Main/Stable |
+| `29.2.2` | Persistent Auto Disconnect, React UI refactor, CIDR conflict/NAT guidance | Current Main/Stable |
 
 ## Rules that prevent another mixed route
 
