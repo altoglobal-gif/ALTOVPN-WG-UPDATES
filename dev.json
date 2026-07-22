@@ -2,19 +2,28 @@
   "schemaVersion": 1,
   "appId": "ALTOVPN-WG",
   "channel": "dev",
-  "latestVersion": "V.2026.29.2.2",
-  "fileVersion": "2026.29.2.2",
+  "latestVersion": "V.2026.29.2.3",
+  "fileVersion": "2026.29.2.3",
   "minimumSupportedVersion": "V.2026.29.1.7",
-  "publishedAt": "2026-07-16T22:49:45+07:00",
-  "releaseNotesUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/tag/v2026.29.2.2",
+  "publishedAt": "2026-07-22T15:44:53+07:00",
+  "releaseNotesUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/tag/v2026.29.2.3",
   "manifestUrl": "https://api.github.com/repos/altoglobal-gif/ALTOVPN-WG-UPDATES/contents/dev.json?ref=dev",
   "changeSummary": [
-    "Dev and Beta target the verified V.2026.29.2.2 helper-changing artifact set.",
-    "React/responsive Main UI, visible CIDR compatibility, and gateway NAT guidance are included.",
-    "Protected persistent Auto Disconnect and helper installed-caller validation are included.",
-    "Stable was promoted to the same verified V.2026.29.2.2 Full Setup artifact."
+    "Dev: unified Main Window and Tray Panel visual system.",
+    "Rebalanced sidebar, header, cards, typography, spacing, and compact-window proportions.",
+    "App-only update; the installed V.2026.29.2.2 helper and WireGuard runtime remain unchanged.",
+    "Beta and Stable promotion reuse this exact artifact, size, and SHA256."
   ],
   "artifact": {
+    "type": "installer-exe",
+    "component": "desktop-client",
+    "platform": "win-x64",
+    "fileName": "ALTOVPN-WG-V.2026.29.2.3-win-x64-app-update.exe",
+    "downloadUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/download/v2026.29.2.3/ALTOVPN-WG-V.2026.29.2.3-win-x64-app-update.exe",
+    "sha256": "2AA7E56F9FC4C38747485139F4DA03387F10B4D3C9659E26EDE599F6CCC3F1B7",
+    "sizeBytes": 146162083
+  },
+  "fallbackArtifact": {
     "type": "installer-exe",
     "component": "desktop-client-helper-and-wireguard",
     "platform": "win-x64",
@@ -24,14 +33,14 @@
     "sizeBytes": 178972067
   },
   "updatePolicy": {
-    "requiresAdmin": true,
-    "installMode": "helper-installer",
-    "touchesHelper": true,
+    "requiresAdmin": false,
+    "installMode": "existing-helper-app-only",
+    "touchesHelper": false,
     "helperVersion": "V.2026.29.2.2",
     "restartRequired": true
   },
   "source": {
     "repository": "altoglobal-gif/ALTOVPN-WG-UPDATES",
-    "tag": "v2026.29.2.2"
+    "tag": "v2026.29.2.3"
   }
 }
