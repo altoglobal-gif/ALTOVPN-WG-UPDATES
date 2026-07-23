@@ -4,6 +4,8 @@ Public update manifest and release artifacts for ALTOVPN-WG.
 
 This repository is intentionally separate from the application source tree so the desktop client can check for updates without embedding a GitHub token.
 
+Historical release notes are stored in [`release-notes/`](release-notes/).
+
 ## Current Channel
 
 - Production channel: `stable` at `V.2026.29.2.2`
