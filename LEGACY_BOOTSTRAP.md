@@ -19,6 +19,6 @@ Profiles and private keys remain in the existing ALTOVPN-WG profile store. Full 
 - File: `ALTOVPN-WG-V.2026.29.2.2-win-x64-setup.exe`
 - Size: `178972067` bytes
 - SHA256: `5737B1F44914023DB64567FC04448355F1FF1CEFECD73457C0CCF6ED074F3F60`
-- [Release notes](RELEASE_NOTES_v2026.29.2.2.md)
+- [Release notes](release-notes/RELEASE_NOTES_v2026.29.2.2.md)
 - MSI: not used
 - Git LFS: not used
