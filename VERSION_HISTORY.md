@@ -61,7 +61,7 @@ The bridge avoids a manual reinstall for the verified native-worker generation. 
 | `31.0.0` | App-only primary plus Full Setup maintenance fallback | Current Main/Stable; helper pinned at 29.2.2 |
 | `31.0.1` | App-only standalone identity and payload-integrity Beta | Previous Beta; helper pinned at 29.2.2 |
 | `31.0.2` | Responsive Settings Beta | Previous Beta; helper pinned at 29.2.2 |
-| `31.0.3` | Full Windows responsive-shell hardening | Current Beta; helper pinned at 29.2.2 |
+| `31.0.3` | Single-file app-only Windows responsive-shell hardening | Current Beta; helper pinned at 29.2.2 |
 
 There is no public GitHub desktop release for `26.1.6`–`26.1.9`, `28.0.1`, or `29.0.3`.
 

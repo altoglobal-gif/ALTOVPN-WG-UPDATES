@@ -12,7 +12,7 @@
 ### Release policy
 
 - Beta points to the `V.2026.31.0.3` app-only artifact.
-- Helper remains `V.2026.29.2.2`; Full Setup is the manual fallback.
+- This explicitly approved single-file release exposes only the app-update EXE and requires the existing `V.2026.29.2.2` Helper.
 - Stable remains on `V.2026.31.0.0`.
 
 ## V.2026.31.0.2 Beta - 2026-07-30

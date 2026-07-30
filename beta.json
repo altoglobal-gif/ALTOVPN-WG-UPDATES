@@ -11,7 +11,7 @@
   "changeSummary": [
     "Beta: every Windows desktop surface now adapts safely while the Main Window is resized.",
     "Required scroll regions keep the final action, row, profile, log entry, and active tunnel reachable.",
-    "App-only update; the installed V.2026.29.2.2 Helper, WireGuard runtime, Full Setup, and user profiles remain unchanged.",
+    "Single-file release: only the app-update EXE is published and no Full Setup fallback is exposed.",
     "Stable remains V.2026.31.0.0 until this Beta is approved."
   ],
   "artifact": {
@@ -22,15 +22,6 @@
     "downloadUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/download/v2026.31.0.3/ALTOVPN-WG-V.2026.31.0.3-win-x64-app-update.exe",
     "sha256": "05F987C9F28718440AA2959D6A5CBB13AF855A8BEDA9262C30DB5A468D383553",
     "sizeBytes": 146169763
-  },
-  "fallbackArtifact": {
-    "type": "installer-exe",
-    "component": "desktop-client-helper-and-wireguard",
-    "platform": "win-x64",
-    "fileName": "ALTOVPN-WG-V.2026.31.0.3-win-x64-setup.exe",
-    "downloadUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/download/v2026.31.0.3/ALTOVPN-WG-V.2026.31.0.3-win-x64-setup.exe",
-    "sha256": "4F9710ADABEF5BD5DCDEFA147DFA82FE8B286EE05D777D203BBB2E099F9053FF",
-    "sizeBytes": 178980259
   },
   "updatePolicy": {
     "requiresAdmin": false,

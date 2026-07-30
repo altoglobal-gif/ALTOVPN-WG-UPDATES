@@ -18,3 +18,9 @@ Desktop and helper versions are independent. App-only updates use the existing L
 - For releases that change the Helper, first deliver the desktop app-only artifact through the app. The new Full Setup remains the explicit maintenance path for replacing the Helper until a dedicated helper-update contract is released and verified.
 - Build both Windows artifacts with:
   `powershell -ExecutionPolicy Bypass -File .\scripts\build-modern-installer.ps1 -Version <version> -HelperVersion <version> -BuildAppUpdateCompanion`
+
+An explicitly approved single-file promotion may publish only the matching
+`*-app-update.exe`, omit `fallbackArtifact`, and remove the Full Setup release
+asset. This exception is valid only when the target population already has the
+required Helper; the manifest must keep `touchesHelper: false` and name the
+required Helper version.

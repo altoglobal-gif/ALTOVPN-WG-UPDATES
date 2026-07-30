@@ -1,4 +1,4 @@
-# ALTOVPN-WG V.2026.31.0.3 Beta
+# ALTOVPN-WG V.2026.31.0.3
 
 Windows responsive-shell hardening for the desktop client.
 
@@ -16,13 +16,12 @@ Windows responsive-shell hardening for the desktop client.
 - Scroll-to-end checks passed for all bounded regions.
 - Windows host tests passed `51/51`.
 
-## Artifacts
+## Artifact
 
 - App-only update: `ALTOVPN-WG-V.2026.31.0.3-win-x64-app-update.exe`
   - Size: `146169763` bytes
   - SHA256: `05F987C9F28718440AA2959D6A5CBB13AF855A8BEDA9262C30DB5A468D383553`
-- Full Setup fallback: `ALTOVPN-WG-V.2026.31.0.3-win-x64-setup.exe`
-  - Size: `178980259` bytes
-  - SHA256: `4F9710ADABEF5BD5DCDEFA147DFA82FE8B286EE05D777D203BBB2E099F9053FF`
 
-Helper remains `V.2026.29.2.2`. This release is available on Beta only; Stable remains `V.2026.31.0.0`.
+This explicitly approved single-file release publishes no Full Setup fallback.
+It requires the existing `V.2026.29.2.2` Helper and does not replace Helper,
+WireGuard, or user profiles.
