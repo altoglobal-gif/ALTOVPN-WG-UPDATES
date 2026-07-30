@@ -4,7 +4,7 @@
   "automaticUpdateFloor": "V.2026.28.1.1",
   "safeLandingTarget": "V.2026.29.1.7",
   "stableTarget": "V.2026.31.0.0",
-  "betaTarget": "V.2026.29.2.3",
+  "betaTarget": "V.2026.31.0.2",
   "devTarget": "V.2026.29.2.3",
   "legacyManifest": "latest.json",
   "stableManifest": "stable.json",
@@ -56,7 +56,9 @@
     "V.2026.29.2.1",
     "V.2026.29.2.2",
     "V.2026.29.2.3",
-    "V.2026.31.0.0"
+    "V.2026.31.0.0",
+    "V.2026.31.0.1",
+    "V.2026.31.0.2"
   ],
   "routes": [
     {

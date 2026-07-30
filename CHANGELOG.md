@@ -1,5 +1,19 @@
 # Changelog
 
+## V.2026.31.0.2 Beta - 2026-07-30
+
+### Changed and fixed
+
+- Made Settings responsive to the available Main Window width with two- and three-column layouts.
+- Removed the internal Settings scrollbar at the supported `920x680` minimum window size.
+- Added compact short-window spacing and a focused protected-controls layout while Admin Mode is unlocked.
+
+### Release policy
+
+- Beta points to the `V.2026.31.0.2` app-only artifact.
+- Helper remains `V.2026.29.2.2`; Full Setup is the manual fallback.
+- Stable remains on `V.2026.31.0.0`.
+
 ## V.2026.31.0.1 Beta - 2026-07-30
 
 ### Changed and fixed
