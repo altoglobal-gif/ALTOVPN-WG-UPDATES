@@ -1,5 +1,12 @@
 # Changelog
 
+## Ubuntu V.2026.31.0.1 source milestone - 2026-07-30
+
+- Ubuntu Client/Site release-candidate source merged to the application repository through [PR #1](https://github.com/altoglobal-gif/ALTOVPN-WG/pull/1).
+- WSL2 Ubuntu 24.04.1 validation passed the Web UI build, helper/GUI/install/update smoke paths, and 48 Ubuntu tests.
+- No Ubuntu artifact or updater manifest is published from this repository yet.
+- Publication remains blocked pending native Ubuntu 22.04 and 24.04 Client/Site acceptance.
+
 ## V.2026.31.0.4 Main / Stable - 2026-07-30
 
 ### Unified single-file release
@@ -9,6 +16,14 @@
 - Existing installations enter App Repair mode and preserve the installed Helper.
 - Retained the established `desktop-client` contract so already released clients accept the unified file; ordinary Full Setup names remain blocked.
 - Stable users now resolve to `V.2026.31.0.4`.
+
+### Validation
+
+- Final release build verified the embedded Helper and WireGuard payload required by new machines.
+- Windows host tests passed `51/51`.
+- GitHub Release contains exactly one asset.
+- Raw `stable.json` and the artifact returned HTTP 200; downloaded size was `178979747` bytes and SHA256 was `54C6FA1E2C8DEF3BFBBBE27BF21B1983F72FD5902FAFE9286CBFB55593FB4BE7`.
+- Existing-install smoke testing completed with exit code `0`, preserved the running `V.2026.29.2.2` Helper, and changed none of the nine checked profile/channel files.
 
 ## V.2026.31.0.3 Beta - 2026-07-30
 
