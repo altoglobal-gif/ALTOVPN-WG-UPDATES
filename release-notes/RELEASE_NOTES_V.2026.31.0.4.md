@@ -10,15 +10,15 @@ Unified single-file Windows release.
 
 ## Safety and validation
 
-- The updater accepts the file only with component `desktop-client-unified` and filename suffix `-unified-setup.exe`.
+- The updater uses the established component `desktop-client` and filename suffix `-app-update.exe` so current Stable clients can install this unified file.
 - SHA256 is verified by the desktop client and again by the LocalSystem update worker.
 - Installation is refused while a WireGuard tunnel service is active.
 - Existing-install validation preserved Helper service/hash/version, profiles, keys, and update channel.
-- Windows host tests passed `54/54`.
+- Windows host tests passed `51/51`.
 
 ## Artifact
 
-- `ALTOVPN-WG-V.2026.31.0.4-win-x64-unified-setup.exe`
+- `ALTOVPN-WG-V.2026.31.0.4-win-x64-app-update.exe`
   - Size: `178980259` bytes
   - SHA256: `11BCE6FE40DD3C859114D08737C45AE81F756A481BDAAF4351E0B2EAAD8FFC2D`
 

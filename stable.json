@@ -16,10 +16,10 @@
   ],
   "artifact": {
     "type": "installer-exe",
-    "component": "desktop-client-unified",
+    "component": "desktop-client",
     "platform": "win-x64",
-    "fileName": "ALTOVPN-WG-V.2026.31.0.4-win-x64-unified-setup.exe",
-    "downloadUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/download/v2026.31.0.4/ALTOVPN-WG-V.2026.31.0.4-win-x64-unified-setup.exe",
+    "fileName": "ALTOVPN-WG-V.2026.31.0.4-win-x64-app-update.exe",
+    "downloadUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/download/v2026.31.0.4/ALTOVPN-WG-V.2026.31.0.4-win-x64-app-update.exe",
     "sha256": "11BCE6FE40DD3C859114D08737C45AE81F756A481BDAAF4351E0B2EAAD8FFC2D",
     "sizeBytes": 178980259
   },

@@ -4,10 +4,10 @@
 
 ### Unified single-file release
 
-- Published one `*-unified-setup.exe` for both fresh installation and supported in-app update.
+- Published one `*-app-update.exe` full-payload installer for both fresh installation and supported in-app update.
 - Fresh machines receive App, Helper `V.2026.29.2.2`, and the pinned official WireGuard runtime.
 - Existing installations enter App Repair mode and preserve the installed Helper.
-- Added a strict updater contract for `desktop-client-unified`; ordinary Full Setup files remain blocked.
+- Retained the established `desktop-client` contract so already released clients accept the unified file; ordinary Full Setup names remain blocked.
 - Stable users now resolve to `V.2026.31.0.4`.
 
 ## V.2026.31.0.3 Beta - 2026-07-30
