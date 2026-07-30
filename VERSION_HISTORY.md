@@ -96,7 +96,8 @@ There is no public GitHub desktop release for `26.1.6`–`26.1.9`, `28.0.1`, or 
 | `29.2.1` | Direct Stable/Beta selection and bundled-WireGuard Full Setup | Previous Main/Stable |
 | `29.2.2` | Persistent Auto Disconnect, React UI refactor, CIDR conflict/NAT guidance | Previous Main/Stable |
 | `29.2.3` | Unified Main Window and Tray Panel visual refresh | Previous Main/Stable |
-| `31.0.0` | Safe app-only updater contract and explicit installer maintenance modes | Current Main/Stable |
+| `31.0.0` | Safe app-only updater contract and explicit installer maintenance modes | Previous Main/Stable |
+| `31.0.4` | Legacy-compatible unified file: full install when Helper is absent, App repair when present | Current Main/Stable |
 
 ## Rules that prevent another mixed route
 

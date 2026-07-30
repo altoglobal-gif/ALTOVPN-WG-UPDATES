@@ -19,7 +19,7 @@ Unified single-file Windows release.
 ## Artifact
 
 - `ALTOVPN-WG-V.2026.31.0.4-win-x64-app-update.exe`
-  - Size: `178980259` bytes
-  - SHA256: `11BCE6FE40DD3C859114D08737C45AE81F756A481BDAAF4351E0B2EAAD8FFC2D`
+  - Size: `178979747` bytes
+  - SHA256: `54C6FA1E2C8DEF3BFBBBE27BF21B1983F72FD5902FAFE9286CBFB55593FB4BE7`
 
 This GitHub release intentionally contains this one asset only.
