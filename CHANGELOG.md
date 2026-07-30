@@ -1,5 +1,20 @@
 # Changelog
 
+## V.2026.31.0.1 Beta - 2026-07-30
+
+### Changed and fixed
+
+- Replaced predecessor namespace and package identities with standalone ALTOVPN-WG identities.
+- Preserved the executable, AppData, Helper service, pipe, startup registry, single-instance, and update endpoint contracts.
+- Made installer payload creation fail closed and validate file count, size, and SHA256 for every embedded entry.
+- Verified the app-only update against an installed `V.2026.29.2.3` layout.
+
+### Release policy
+
+- Beta points to the `V.2026.31.0.1` app-only artifact.
+- Helper remains `V.2026.29.2.2`; Full Setup is the manual fallback.
+- Stable remains on `V.2026.31.0.0` pending Beta approval.
+
 ## V.2026.31.0.0 Main / Stable - 2026-07-30
 
 ### Changed and fixed
