@@ -1,5 +1,21 @@
 # Changelog
 
+## V.2026.31.0.0 Main / Stable - 2026-07-30
+
+### Changed and fixed
+
+- Published the standalone ALTOVPN-WG safe app-update and Windows maintenance release directly to Stable.
+- Restricted automatic updates to app-only EXEs or web patches and blocked Full Setup fallback after a missing app-update asset.
+- Added explicit Repair App, Reinstall Full, Reinstall Only Helper, and Uninstall maintenance modes.
+- Kept Helper `V.2026.29.2.2` unchanged and online for app-only repair.
+- Preserved profiles and keys and blocked Helper/full/uninstall maintenance while a tunnel is active.
+
+### Release policy
+
+- Stable points to the `V.2026.31.0.0` app-only artifact.
+- Full Setup is the manual maintenance and recovery fallback.
+- This release bypasses Beta by explicit release approval.
+
 ## V.2026.29.2.2 Beta - 2026-07-16
 
 ### Added and changed

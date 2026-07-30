@@ -8,12 +8,12 @@ Historical release notes are stored in [`release-notes/`](release-notes/).
 
 ## Current Channel
 
-- Production channel: `stable` at `V.2026.29.2.2`
-- Opt-in Beta channel: `V.2026.29.2.2`
+- Production channel: `stable` at `V.2026.31.0.0`
+- Opt-in Beta channel: `V.2026.29.2.3`
 - Legacy/Safe Main manifest: `latest.json`
 - Moving stable manifest: `stable.json`
 - Safe Main bridge: `V.2026.29.1.7` app-only
-- Moving stable: `V.2026.29.2.2` Full Setup
+- Moving stable: `V.2026.31.0.0` app-only update
 - Automatic in-place floor: `V.2026.28.1.1`; older native clients use GitHub Release only as the final fallback
 - Artifact type: Modern Installer `installer-exe`; new MSI releases are prohibited
 
@@ -54,7 +54,7 @@ Restart ALTOVPN-WG after applying an update so WebView2 reloads the updated appl
 ## Publishing Rules
 
 - Never commit installer binaries or release artifacts to git, and never use Git LFS. Publish binaries only as GitHub Release assets.
-- Publish application source changes in the original source repository before publishing this update repository.
+- Publish application source changes in the standalone `ALTOVPN-WG` repository before publishing this update repository. Do not sync releases through `VPNCLIENT-WG-CORE-WEBAPP`.
 - Keep each manifest aligned with its artifact: version, file name, download URL, SHA256, size, release notes URL, and tag must describe the same release.
 - Do not use local-only `Updater/latest.json` changes as a real release; installed clients read the GitHub update repository by default.
 - For full installer updates, preserve the helper install path: client downloads and verifies the artifact, then `AltoVpnWgHelper` verifies SHA256 again before running the installer.
