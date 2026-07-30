@@ -12,7 +12,7 @@ Audited on 2026-07-10 from the public GitHub Releases API, update-repository tag
 | `V.2026.28.1.1`–`V.2026.29.1.6` | Existing helper applies app-only bridge `V.2026.29.1.7` without UAC |
 | `V.2026.29.1.7`-`V.2026.29.2.3` | Automatic `nextManifestUrl` -> app-only stable `V.2026.31.0.0` |
 | `V.2026.31.0.0` | Current desktop stable; Helper remains `V.2026.29.2.2` |
-| Beta opt-in | App-only `V.2026.31.0.1`; Helper remains `V.2026.29.2.2` |
+| Beta opt-in | App-only `V.2026.31.0.3`; Helper remains `V.2026.29.2.2` |
 
 The bridge avoids a manual reinstall for the verified native-worker generation. Very old clients remain on the explicit GitHub fallback rather than being forced through an unsafe scheduler.
 
@@ -59,7 +59,9 @@ The bridge avoids a manual reinstall for the verified native-worker generation. 
 | `29.2.2` | Helper-changing Full Setup primary plus optional App Update asset | Previous Main/Stable; App/Helper 29.2.2 |
 | `29.2.3` | App-only unified desktop visual refresh | Previous Main/Stable; helper pinned at 29.2.2 |
 | `31.0.0` | App-only primary plus Full Setup maintenance fallback | Current Main/Stable; helper pinned at 29.2.2 |
-| `31.0.1` | App-only standalone identity and payload-integrity Beta | Current Beta; helper pinned at 29.2.2 |
+| `31.0.1` | App-only standalone identity and payload-integrity Beta | Previous Beta; helper pinned at 29.2.2 |
+| `31.0.2` | Responsive Settings Beta | Previous Beta; helper pinned at 29.2.2 |
+| `31.0.3` | Full Windows responsive-shell hardening | Current Beta; helper pinned at 29.2.2 |
 
 There is no public GitHub desktop release for `26.1.6`–`26.1.9`, `28.0.1`, or `29.0.3`.
 

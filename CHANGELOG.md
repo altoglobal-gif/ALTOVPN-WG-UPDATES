@@ -1,5 +1,20 @@
 # Changelog
 
+## V.2026.31.0.3 Beta - 2026-07-30
+
+### Changed and fixed
+
+- Hardened every Windows desktop surface against clipping during Main Window resize.
+- Added bounded horizontal or vertical scrolling where content cannot fit safely.
+- Kept profile, connection, activity, configuration, scanner, Settings, changelog, menus, overlays, and active-tunnel actions reachable.
+- Preserved wide and tall layouts without stretching controls beyond their intended reading width.
+
+### Release policy
+
+- Beta points to the `V.2026.31.0.3` app-only artifact.
+- Helper remains `V.2026.29.2.2`; Full Setup is the manual fallback.
+- Stable remains on `V.2026.31.0.0`.
+
 ## V.2026.31.0.2 Beta - 2026-07-30
 
 ### Changed and fixed
