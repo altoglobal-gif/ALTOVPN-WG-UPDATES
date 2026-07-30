@@ -1,6 +1,6 @@
 # ALTOVPN-WG version and updater history
 
-Main/Stable advanced directly on 2026-07-30 to app-only `V.2026.31.0.0` with safe artifact selection and explicit Windows maintenance actions. Helper remains `V.2026.29.2.2`.
+Main/Stable advanced on 2026-07-30 to unified single-file `V.2026.31.0.4`. New machines receive App, Helper, and WireGuard; existing installations repair only App files.
 
 Audited on 2026-07-10 from the public GitHub Releases API, update-repository tags/manifests, and native source history. “Source version” alone does not mean an installable client was released.
 
@@ -10,9 +10,9 @@ Audited on 2026-07-10 from the public GitHub Releases API, update-repository tag
 |---|---|
 | Below `V.2026.28.1.1` | `V.2026.31.0.0` Full Setup is the final fallback |
 | `V.2026.28.1.1`–`V.2026.29.1.6` | Existing helper applies app-only bridge `V.2026.29.1.7` without UAC |
-| `V.2026.29.1.7`-`V.2026.29.2.3` | Automatic `nextManifestUrl` -> app-only stable `V.2026.31.0.0` |
-| `V.2026.31.0.0` | Current desktop stable; Helper remains `V.2026.29.2.2` |
-| Beta opt-in | App-only `V.2026.31.0.3`; Helper remains `V.2026.29.2.2` |
+| `V.2026.29.1.7`-`V.2026.31.0.3` | Automatic `nextManifestUrl` -> unified stable `V.2026.31.0.4` |
+| `V.2026.31.0.4` | Current desktop stable; existing Helper remains `V.2026.29.2.2` |
+| Beta opt-in | App-only `V.2026.31.0.3` remains the Beta channel |
 
 The bridge avoids a manual reinstall for the verified native-worker generation. Very old clients remain on the explicit GitHub fallback rather than being forced through an unsafe scheduler.
 
@@ -58,10 +58,11 @@ The bridge avoids a manual reinstall for the verified native-worker generation. 
 | `29.2.1` | App-only primary plus bundled-WireGuard Full Setup | Previous Main/Stable; helper pinned at 29.1.6 |
 | `29.2.2` | Helper-changing Full Setup primary plus optional App Update asset | Previous Main/Stable; App/Helper 29.2.2 |
 | `29.2.3` | App-only unified desktop visual refresh | Previous Main/Stable; helper pinned at 29.2.2 |
-| `31.0.0` | App-only primary plus Full Setup maintenance fallback | Current Main/Stable; helper pinned at 29.2.2 |
+| `31.0.0` | App-only primary plus Full Setup maintenance fallback | Previous Main/Stable; helper pinned at 29.2.2 |
 | `31.0.1` | App-only standalone identity and payload-integrity Beta | Previous Beta; helper pinned at 29.2.2 |
 | `31.0.2` | Responsive Settings Beta | Previous Beta; helper pinned at 29.2.2 |
 | `31.0.3` | Single-file app-only Windows responsive-shell hardening | Current Beta; helper pinned at 29.2.2 |
+| `31.0.4` | Unified installer: fresh install or existing App repair | Current Main/Stable; helper payload and installed contract 29.2.2 |
 
 There is no public GitHub desktop release for `26.1.6`–`26.1.9`, `28.0.1`, or `29.0.3`.
 

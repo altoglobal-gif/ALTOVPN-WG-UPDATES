@@ -3,7 +3,7 @@
   "versionAuthority": "native-desktop-file-version",
   "automaticUpdateFloor": "V.2026.28.1.1",
   "safeLandingTarget": "V.2026.29.1.7",
-  "stableTarget": "V.2026.31.0.0",
+  "stableTarget": "V.2026.31.0.4",
   "betaTarget": "V.2026.31.0.3",
   "devTarget": "V.2026.29.2.3",
   "legacyManifest": "latest.json",
@@ -59,7 +59,8 @@
     "V.2026.31.0.0",
     "V.2026.31.0.1",
     "V.2026.31.0.2",
-    "V.2026.31.0.3"
+    "V.2026.31.0.3",
+    "V.2026.31.0.4"
   ],
   "routes": [
     {
@@ -94,20 +95,27 @@
       "maximumVersion": "V.2026.29.2.2",
       "mode": "chained-stable-automatic",
       "manifest": "stable.json",
-      "targetVersion": "V.2026.31.0.0"
+      "targetVersion": "V.2026.31.0.4"
     },
     {
       "minimumVersion": "V.2026.29.2.3",
       "maximumVersion": "V.2026.29.2.3",
       "mode": "chained-stable-automatic",
       "manifest": "stable.json",
-      "targetVersion": "V.2026.31.0.0"
+      "targetVersion": "V.2026.31.0.4"
     },
     {
       "minimumVersion": "V.2026.31.0.0",
-      "maximumVersion": "V.2026.31.0.0",
+      "maximumVersion": "V.2026.31.0.3",
+      "mode": "chained-stable-automatic",
+      "manifest": "stable.json",
+      "targetVersion": "V.2026.31.0.4"
+    },
+    {
+      "minimumVersion": "V.2026.31.0.4",
+      "maximumVersion": "V.2026.31.0.4",
       "mode": "stable-current",
-      "targetVersion": "V.2026.31.0.0"
+      "targetVersion": "V.2026.31.0.4"
     }
   ]
 }

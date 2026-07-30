@@ -19,8 +19,10 @@ Desktop and helper versions are independent. App-only updates use the existing L
 - Build both Windows artifacts with:
   `powershell -ExecutionPolicy Bypass -File .\scripts\build-modern-installer.ps1 -Version <version> -HelperVersion <version> -BuildAppUpdateCompanion`
 
-An explicitly approved single-file promotion may publish only the matching
-`*-app-update.exe`, omit `fallbackArtifact`, and remove the Full Setup release
-asset. This exception is valid only when the target population already has the
-required Helper; the manifest must keep `touchesHelper: false` and name the
-required Helper version.
+An explicitly approved unified single-file promotion may publish one
+`*-unified-setup.exe` with component `desktop-client-unified`. The installer
+must perform a full App + Helper + WireGuard install when the Helper is absent,
+but quiet update on an existing installation must enter App Repair mode and
+leave the installed Helper unchanged. The manifest omits `fallbackArtifact`,
+keeps `touchesHelper: false` for the update path, and names the required Helper
+version.

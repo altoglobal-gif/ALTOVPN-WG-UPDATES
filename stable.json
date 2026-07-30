@@ -2,45 +2,36 @@
   "schemaVersion": 1,
   "appId": "ALTOVPN-WG",
   "channel": "stable",
-  "latestVersion": "V.2026.31.0.0",
-  "fileVersion": "2026.31.0.0",
+  "latestVersion": "V.2026.31.0.4",
+  "fileVersion": "2026.31.0.4",
   "minimumSupportedVersion": "V.2026.29.1.7",
-  "publishedAt": "2026-07-30T11:58:56+07:00",
-  "releaseNotesUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/tag/v2026.31.0.0",
+  "publishedAt": "2026-07-30T15:52:00+07:00",
+  "releaseNotesUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/tag/v2026.31.0.4",
   "manifestUrl": "https://api.github.com/repos/altoglobal-gif/ALTOVPN-WG-UPDATES/contents/stable.json?ref=main",
   "changeSummary": [
-    "Stable: safe app-only update handling and explicit Windows maintenance actions.",
-    "Automatic updates accept only app-only EXEs or web patches and never fall back to Full Setup.",
-    "Repair App keeps the installed V.2026.29.2.2 helper online; Full, Helper, and uninstall maintenance require disconnected tunnels.",
-    "Promoted directly to Main/Stable without a Beta publication."
+    "Main/Stable: one unified Windows installer supports both new machines and existing installations.",
+    "Fresh install deploys App, Helper V.2026.29.2.2, and the pinned official WireGuard runtime.",
+    "Existing in-app update detects the installed Helper and repairs only App files.",
+    "Profiles, keys, channel selection, and the installed Helper remain unchanged during update."
   ],
   "artifact": {
     "type": "installer-exe",
-    "component": "desktop-client",
+    "component": "desktop-client-unified",
     "platform": "win-x64",
-    "fileName": "ALTOVPN-WG-V.2026.31.0.0-win-x64-app-update.exe",
-    "downloadUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/download/v2026.31.0.0/ALTOVPN-WG-V.2026.31.0.0-win-x64-app-update.exe",
-    "sha256": "C10C6DC85F315B10F0446BCA7FB5698609146A41963EFEF885A3560BA6CD8326",
-    "sizeBytes": 146168739
-  },
-  "fallbackArtifact": {
-    "type": "installer-exe",
-    "component": "desktop-client-helper-and-wireguard",
-    "platform": "win-x64",
-    "fileName": "ALTOVPN-WG-V.2026.31.0.0-win-x64-setup.exe",
-    "downloadUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/download/v2026.31.0.0/ALTOVPN-WG-V.2026.31.0.0-win-x64-setup.exe",
-    "sha256": "1CEB3388D476052F1D0A2AD9631A09718171988C99547CD0AB49D83A5BCE8F53",
-    "sizeBytes": 178979235
+    "fileName": "ALTOVPN-WG-V.2026.31.0.4-win-x64-unified-setup.exe",
+    "downloadUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/download/v2026.31.0.4/ALTOVPN-WG-V.2026.31.0.4-win-x64-unified-setup.exe",
+    "sha256": "11BCE6FE40DD3C859114D08737C45AE81F756A481BDAAF4351E0B2EAAD8FFC2D",
+    "sizeBytes": 178980259
   },
   "updatePolicy": {
     "requiresAdmin": false,
-    "installMode": "existing-helper-app-only",
+    "installMode": "unified-fresh-or-existing-app-repair",
     "touchesHelper": false,
     "helperVersion": "V.2026.29.2.2",
     "restartRequired": true
   },
   "source": {
     "repository": "altoglobal-gif/ALTOVPN-WG-UPDATES",
-    "tag": "v2026.31.0.0"
+    "tag": "v2026.31.0.4"
   }
 }
