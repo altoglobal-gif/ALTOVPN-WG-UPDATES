@@ -1,4 +1,6 @@
-# ALTOVPN-WG V.2026.32.0.1 Main / Stable
+# ALTOVPN-WG V.2026.32.0.1 — Withdrawn
+
+This release was removed from the Stable manifest after endpoint security blocked the copied update worker before the installer started. Stable has returned to `V.2026.31.0.4`.
 
 Windows Stable release. Ubuntu remains a release candidate and is not included in the public update manifest.
 

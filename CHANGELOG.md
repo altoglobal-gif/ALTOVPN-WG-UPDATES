@@ -2,6 +2,12 @@
 
 ## V.2026.32.0.1 Main / Stable - 2026-08-06
 
+### Withdrawn
+
+- Stable was rolled back to `V.2026.31.0.4` after production Updater testing reached `Access is denied` while the installed Helper attempted to start its copied update worker.
+- Artifact download, size, and SHA256 verification had passed; the installer itself had not started.
+- The release asset remains available for diagnosis and manual testing but is not selected by `stable.json`.
+
 - Bundles signed WireGuard runtime binaries, the WebView2 Evergreen bootstrapper, and pinned WGCF `2.2.32`.
 - Adds protected Cloudflare WARP profile creation in Windows Client Mode.
 - Advances Windows App and Helper together to `V.2026.32.0.1`.
