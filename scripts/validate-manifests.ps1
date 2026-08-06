@@ -46,7 +46,13 @@ function Require-NonEmptyString($Object, [string]$Name, [string]$Context) {
     return $value
 }
 
-function Require-IsoTimestamp([string]$Value, [string]$Context) {
+function Require-IsoTimestamp($Value, [string]$Context) {
+    if ($Value -is [DateTimeOffset] -or $Value -is [DateTime]) {
+        return
+    }
+    if ($Value -isnot [string] -or [string]::IsNullOrWhiteSpace($Value)) {
+        Fail "$Context must be a non-empty ISO-8601 timestamp"
+    }
     $parsed = [DateTimeOffset]::MinValue
     if (-not [DateTimeOffset]::TryParse(
         $Value,
@@ -55,6 +61,11 @@ function Require-IsoTimestamp([string]$Value, [string]$Context) {
         [ref]$parsed)) {
         Fail "$Context must be an ISO-8601 timestamp with an offset"
     }
+}
+
+function Require-TimestampProperty($Object, [string]$Name, [string]$Context) {
+    $value = Require-Property $Object $Name $Context
+    Require-IsoTimestamp $value "$Context.$Name"
 }
 
 function Get-ArtifactVersion([string]$FileName, [string]$Context) {
@@ -168,7 +179,7 @@ foreach ($entry in @($withdrawnPolicy.withdrawnVersions)) {
         Fail "withdrawn version has invalid format: $version"
     }
     [void](Require-NonEmptyString $entry 'reason' "withdrawn version $version")
-    Require-IsoTimestamp (Require-NonEmptyString $entry 'withdrawnAt' "withdrawn version $version") "withdrawn version $version.withdrawnAt"
+    Require-TimestampProperty $entry 'withdrawnAt' "withdrawn version $version"
     [void](Require-NonEmptyString $entry 'releaseUrl' "withdrawn version $version")
     [void]$withdrawn.Add($version)
 }
@@ -186,9 +197,10 @@ foreach ($manifestName in $manifestChannels.Keys) {
     $manifest = Read-JsonFile (Join-Path $RepositoryRoot $manifestName)
     $manifests[$manifestName] = $manifest
 
-    foreach ($field in @('latestVersion', 'fileVersion', 'minimumSupportedVersion', 'publishedAt', 'releaseNotesUrl', 'manifestUrl')) {
+    foreach ($field in @('latestVersion', 'fileVersion', 'minimumSupportedVersion', 'releaseNotesUrl', 'manifestUrl')) {
         [void](Require-NonEmptyString $manifest $field $context)
     }
+    Require-TimestampProperty $manifest 'publishedAt' $context
     [void](Require-Property $manifest 'artifact' $context)
     [void](Require-Property $manifest 'updatePolicy' $context)
     [void](Require-Property $manifest 'source' $context)
@@ -200,7 +212,6 @@ foreach ($manifestName in $manifestChannels.Keys) {
     if ($manifest.minimumSupportedVersion -notmatch $versionPattern) { Fail "$context.minimumSupportedVersion has invalid format" }
     if ($manifest.fileVersion -ne $manifest.latestVersion.Substring(2)) { Fail "$context.fileVersion must match latestVersion" }
     if ($withdrawn.Contains([string]$manifest.latestVersion)) { Fail "$context selects withdrawn version $($manifest.latestVersion)" }
-    Require-IsoTimestamp $manifest.publishedAt "$context.publishedAt"
     if ($manifest.releaseNotesUrl -notmatch '^https://github\.com/') { Fail "$context.releaseNotesUrl must use HTTPS on github.com" }
     if ($manifest.manifestUrl -notmatch '^https://api\.github\.com/') { Fail "$context.manifestUrl must use HTTPS on api.github.com" }
     if (@($manifest.changeSummary).Count -lt 1) { Fail "$context.changeSummary must contain at least one item" }
@@ -253,7 +264,7 @@ if ($helperChanged) {
     if ($attestation.artifactSha256 -ne $stable.artifact.sha256) { Fail "$attestationContext artifactSha256 does not match stable" }
     if ($attestation.sourceRepository -ne $sourceCodeRepository) { Fail "$attestationContext sourceRepository must be $sourceCodeRepository" }
     if ($attestation.sourceCommit -notmatch '^[a-f0-9]{40}$') { Fail "$attestationContext sourceCommit must be a full lowercase Git commit SHA" }
-    Require-IsoTimestamp (Require-NonEmptyString $attestation 'testedAt' $attestationContext) "$attestationContext.testedAt"
+    Require-TimestampProperty $attestation 'testedAt' $attestationContext
 
     foreach ($check in @($policy.productionSmoke.requiredChecks)) {
         if (-not ($attestation.results.PSObject.Properties.Name -contains $check) -or $attestation.results.$check -ne $true) {
@@ -262,7 +273,7 @@ if ($helperChanged) {
     }
     if ($attestation.approval.approved -ne $true) { Fail "$attestationContext requires approval.approved=true" }
     [void](Require-NonEmptyString $attestation.approval 'approvedBy' "$attestationContext.approval")
-    Require-IsoTimestamp (Require-NonEmptyString $attestation.approval 'approvedAt' "$attestationContext.approval") "$attestationContext.approval.approvedAt"
+    Require-TimestampProperty $attestation.approval 'approvedAt' "$attestationContext.approval"
     [void](Require-NonEmptyString $attestation.approval 'reference' "$attestationContext.approval")
 
     if ($Online) {
