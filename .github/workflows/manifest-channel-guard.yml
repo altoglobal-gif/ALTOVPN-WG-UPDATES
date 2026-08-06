@@ -1,0 +1,57 @@
+name: Manifest channel guard
+
+on:
+  pull_request:
+    paths:
+      - latest.json
+      - stable.json
+      - beta.json
+      - dev.json
+      - withdrawn-versions.json
+      - manifest-guard-policy.json
+      - attestations/**
+      - scripts/validate-manifests.ps1
+      - scripts/test-manifest-guard.ps1
+      - .github/workflows/manifest-channel-guard.yml
+  push:
+    branches: [main, beta, dev]
+    paths:
+      - latest.json
+      - stable.json
+      - beta.json
+      - dev.json
+      - withdrawn-versions.json
+      - manifest-guard-policy.json
+      - attestations/**
+      - scripts/validate-manifests.ps1
+      - scripts/test-manifest-guard.ps1
+      - .github/workflows/manifest-channel-guard.yml
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Run local guard regression tests
+        shell: pwsh
+        run: ./scripts/test-manifest-guard.ps1
+
+      - name: Validate pull request against its base
+        if: github.event_name == 'pull_request'
+        shell: pwsh
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: ./scripts/validate-manifests.ps1 -BaseRef "origin/${{ github.base_ref }}" -Online
+
+      - name: Validate published branch
+        if: github.event_name == 'push'
+        shell: pwsh
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: ./scripts/validate-manifests.ps1 -Online

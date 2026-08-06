@@ -1,0 +1,10 @@
+/latest.json @altoglobal-gif
+/stable.json @altoglobal-gif
+/beta.json @altoglobal-gif
+/dev.json @altoglobal-gif
+/withdrawn-versions.json @altoglobal-gif
+/manifest-guard-policy.json @altoglobal-gif
+/attestations/ @altoglobal-gif
+/scripts/validate-manifests.ps1 @altoglobal-gif
+/scripts/test-manifest-guard.ps1 @altoglobal-gif
+/.github/workflows/manifest-channel-guard.yml @altoglobal-gif
