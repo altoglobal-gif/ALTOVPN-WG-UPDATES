@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "withdrawnVersions": [
+    {
+      "version": "V.2026.32.0.1",
+      "withdrawnAt": "2026-08-06T11:47:59+07:00",
+      "reason": "Endpoint security blocked the copied update worker before the installer started.",
+      "releaseUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/tag/v2026.32.0.1"
+    }
+  ]
+}

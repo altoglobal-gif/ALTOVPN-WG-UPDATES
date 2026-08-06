@@ -56,12 +56,15 @@ Restart ALTOVPN-WG after applying an update so WebView2 reloads the updated appl
 1. Build the Modern Installer EXE for native/desktop changes, or stage `packages/web-ui` for UI-only patch changes.
 2. Upload the artifact directly as a GitHub Release asset.
 3. Compute SHA256 and size from the uploaded/downloaded artifact.
-4. Update `stable.json`. Change `latest.json` only when intentionally replacing the permanent Safe Main landing release.
-5. Add release notes for the version.
-6. Commit and push this repository.
-7. Verify raw `latest.json`, raw `stable.json`, and the artifact URL return HTTP 200.
+4. Update `stable.json`. Change `latest.json` only together with an intentional Safe Main policy change.
+5. For a Helper-changing Stable promotion, add the required production-smoke attestation described in [`attestations/README.md`](attestations/README.md).
+6. Run `powershell -ExecutionPolicy Bypass -File .\scripts\test-manifest-guard.ps1` and `powershell -ExecutionPolicy Bypass -File .\scripts\validate-manifests.ps1 -Online`.
+7. Add release notes for the version and open a pull request; do not push a channel promotion directly to `main`.
+8. Verify raw `latest.json`, raw `stable.json`, and the artifact URL return HTTP 200.
 
-For a unified release, also verify that the GitHub Release contains exactly one asset and a clean-machine payload includes Helper and WireGuard. Helper-changing promotions should normally include an existing-install smoke; `V.2026.32.0.1` was published to GitHub at the owner's direction after UAC smoke was declined, with unit/CI coverage retained as the recorded evidence.
+For a unified release, also verify that the GitHub Release contains exactly one asset and a clean-machine payload includes Helper and WireGuard. Helper-changing Stable promotions are rejected unless the exact artifact has a passing installed-transition smoke with Endpoint EDR enabled and explicit approval metadata. `V.2026.32.0.1` remains available only as a withdrawn forensic artifact and is blocked by `withdrawn-versions.json`.
+
+Repository administrators should require the `Manifest channel guard / validate` check and Code Owner approval before merging channel changes. The workflow also audits pushes, but a required check is what prevents a bad manifest from reaching a protected branch.
 
 For Ubuntu, do not add an artifact or manifest entry until the source QA document shows complete native Ubuntu 22.04/24.04 Client and Site acceptance. WSL2 validation alone is not sufficient for publication.
 
