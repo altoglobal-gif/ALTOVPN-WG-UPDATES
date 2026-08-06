@@ -22,7 +22,8 @@ Desktop and helper versions are independent. App-only updates use the existing L
 An explicitly approved unified single-file promotion may publish one full-payload
 installer through the established `*-app-update.exe` / `desktop-client` contract
 so already released clients can accept it. The installer must perform a full App
-+ Helper + WireGuard install when the Helper is absent, but quiet update on an
-existing installation must enter App Repair mode and leave the installed Helper
-unchanged. The manifest omits `fallbackArtifact`, keeps `touchesHelper: false`
-for the update path, and names the required Helper version.
++ Helper + WireGuard install when the Helper is absent. A Helper-changing release
+may also perform a full reinstall when the installed and packaged Helper versions
+differ, provided active tunnels remain blocked and the manifest declares
+`touchesHelper: true`. Matching Helper versions may continue through App Repair.
+The manifest omits `fallbackArtifact` and names the packaged Helper version.

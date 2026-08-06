@@ -1,5 +1,16 @@
 # Changelog
 
+## V.2026.32.0.1 Main / Stable - 2026-08-06
+
+- Bundles signed WireGuard runtime binaries, the WebView2 Evergreen bootstrapper, and pinned WGCF `2.2.32`.
+- Adds protected Cloudflare WARP profile creation in Windows Client Mode.
+- Advances Windows App and Helper together to `V.2026.32.0.1`.
+- Quiet unified updates compare Helper versions and choose full reinstall when the packaged Helper is newer or cannot be verified.
+- Active WireGuard tunnels continue to block Helper-changing maintenance.
+- Windows tests pass `56/56`; hosted builds, bridge parity, release/version gates, Web UI build, and npm audit pass.
+- Published directly to Stable at the owner’s direction. The local UAC installed-update smoke was declined; no successful installed App/Helper transition is claimed.
+- Ubuntu `V.2026.32.0.1` remains unpublished pending native Ubuntu 22.04/24.04 acceptance.
+
 ## Ubuntu V.2026.31.0.1 source milestone - 2026-07-30
 
 - Ubuntu Client/Site release-candidate source merged to the application repository through [PR #1](https://github.com/altoglobal-gif/ALTOVPN-WG/pull/1).
