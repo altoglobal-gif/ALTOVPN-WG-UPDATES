@@ -1,6 +1,6 @@
 # ALTOVPN-WG version and updater history
 
-Main/Stable is `V.2026.31.0.4`. `V.2026.32.0.1` was briefly published and then withdrawn on 2026-08-06 after endpoint security blocked the copied update worker before installation.
+Main/Stable advanced on 2026-08-11 to `V.2026.32.0.0` by promoting the verified Beta artifact. `V.2026.32.0.1` remains withdrawn after endpoint security blocked its copied update worker before installation.
 
 Audited on 2026-07-10 from the public GitHub Releases API, update-repository tags/manifests, and native source history. “Source version” alone does not mean an installable client was released.
 
@@ -8,12 +8,12 @@ Audited on 2026-07-10 from the public GitHub Releases API, update-repository tag
 
 | Native installed version | Route |
 |---|---|
-| Below `V.2026.28.1.1` | `V.2026.31.0.0` Full Setup is the final fallback |
+| Below `V.2026.28.1.1` | `V.2026.32.0.0` Full Setup is the final fallback |
 | `V.2026.28.1.1`–`V.2026.29.1.6` | Existing helper applies app-only bridge `V.2026.29.1.7` without UAC |
-| `V.2026.29.1.7`-`V.2026.31.0.3` | Automatic `nextManifestUrl` -> unified stable `V.2026.31.0.4` |
-| `V.2026.31.0.4` | Current desktop stable; existing Helper remains `V.2026.29.2.2` |
+| `V.2026.29.1.7`-`V.2026.32.0.0` | Automatic `nextManifestUrl` -> app-only Stable `V.2026.32.0.0` |
+| `V.2026.32.0.0` | Current desktop Stable; existing Helper remains `V.2026.29.2.2` |
 | `V.2026.32.0.1` | Withdrawn; copied update worker was blocked before installer launch |
-| Beta opt-in | App-only `V.2026.31.0.3` remains the Beta channel |
+| Beta opt-in | App-only `V.2026.32.0.0`; same verified artifact as Stable |
 
 The bridge avoids a manual reinstall for the verified native-worker generation. Very old clients remain on the explicit GitHub fallback rather than being forced through an unsafe scheduler.
 
@@ -64,6 +64,7 @@ The bridge avoids a manual reinstall for the verified native-worker generation. 
 | `31.0.2` | Responsive Settings Beta | Previous Beta; helper pinned at 29.2.2 |
 | `31.0.3` | Single-file app-only Windows responsive-shell hardening | Current Beta; helper pinned at 29.2.2 |
 | `31.0.4` | Unified installer: fresh install or existing App repair | Previous Main/Stable; helper payload and installed contract 29.2.2 |
+| `32.0.0` | Signed app-only primary plus Full Setup fallback | Current Stable and Beta; Helper pinned at 29.2.2 |
 | `32.0.1` | Unified Helper-version-aware installer | Withdrawn after copied worker launch failure |
 
 There is no public GitHub desktop release for `26.1.6`–`26.1.9`, `28.0.1`, or `29.0.3`.
@@ -99,7 +100,8 @@ There is no public GitHub desktop release for `26.1.6`–`26.1.9`, `28.0.1`, or 
 | `29.2.2` | Persistent Auto Disconnect, React UI refactor, CIDR conflict/NAT guidance | Previous Main/Stable |
 | `29.2.3` | Unified Main Window and Tray Panel visual refresh | Previous Main/Stable |
 | `31.0.0` | Safe app-only updater contract and explicit installer maintenance modes | Previous Main/Stable |
-| `31.0.4` | Legacy-compatible unified file: full install when Helper is absent, App repair when present | Current Main/Stable |
+| `31.0.4` | Legacy-compatible unified file: full install when Helper is absent, App repair when present | Previous Main/Stable |
+| `32.0.0` | Signed app-only promotion with Full Setup fallback | Current Main/Stable |
 
 ## Rules that prevent another mixed route
 
