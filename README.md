@@ -8,21 +8,23 @@ Historical release notes are stored in [`release-notes/`](release-notes/).
 
 ## Platform Status
 
-- Windows Main/Stable is rolled back to `V.2026.31.0.4` after the `V.2026.32.0.1` copied update worker was blocked by endpoint security on production smoke.
+- Windows Main/Stable is promoted to `V.2026.32.0.0` from the verified Beta artifact; Helper `V.2026.29.2.2` remains unchanged.
 - Ubuntu Client/Site `V.2026.31.0.1` source is merged in the application repository through [PR #1](https://github.com/altoglobal-gif/ALTOVPN-WG/pull/1).
 - Ubuntu artifacts and updater metadata are not published here yet. Native Ubuntu 22.04 and 24.04 acceptance must finish first.
 
 ## Current Channel
 
-- Production channel: `stable` at `V.2026.31.0.4`
-- Opt-in Beta channel: `V.2026.31.0.3`
+- Production channel: `stable` at `V.2026.32.0.0`
+- Opt-in Beta channel: `V.2026.32.0.0`
 - Legacy/Safe Main manifest: `latest.json`
 - Moving stable manifest: `stable.json`
 - Safe Main bridge: `V.2026.29.1.7` app-only
-- Moving stable: `V.2026.31.0.4` unified single-file Windows installer
+- Moving stable: `V.2026.32.0.0` signed app-only update with Full Setup fallback
 - Automatic in-place floor: `V.2026.28.1.1`; older native clients use GitHub Release only as the final fallback
-- Stable artifact: `ALTOVPN-WG-V.2026.31.0.4-win-x64-app-update.exe`
-- Stable SHA256: `54C6FA1E2C8DEF3BFBBBE27BF21B1983F72FD5902FAFE9286CBFB55593FB4BE7`
+- Stable artifact: `ALTOVPN-WG-V.2026.32.0.0-win-x64-app-update.exe`
+- Stable SHA256: `E0125AC51435692AC404D03E64E9166F198E3A4E22AF4531398FD0766D5FA63D`
+- Stable fallback: `ALTOVPN-WG-V.2026.32.0.0-win-x64-setup.exe`
+- Stable fallback SHA256: `FCEF5A2924B60D012CF8003A9EC51D79700079E6153C885A4081C8C57B82E485`
 - Artifact type: Modern Installer `installer-exe`; new MSI releases are prohibited
 
 ## Client Behavior
@@ -33,7 +35,7 @@ The installed native desktop file version is authoritative. `V.2026.29.0.3` is s
 
 Desktop and helper versions are independent. Ordinary releases remain app-only unless an explicitly approved unified release is required.
 
-Stable `V.2026.31.0.4` is the approved one-file exception. It uses the established `desktop-client` / `-app-update.exe` contract so installed clients accept it, while carrying the complete App + Helper + WireGuard payload required by a new machine. Quiet mode chooses full install when the Helper is absent and App Repair when the Helper is already installed. The Stable manifest has no fallback artifact. `V.2026.32.0.1` is withdrawn because endpoint security blocked its copied update worker before the installer started.
+Stable `V.2026.32.0.0` is the verified app-only promotion of the Beta release. It keeps the established `desktop-client` / `-app-update.exe` contract for installed clients, leaves the existing Helper `V.2026.29.2.2` running, and uses the signed Full Setup only for fresh install, manual repair, or maintenance. The same artifact bytes, size, and SHA256 are used by Beta and Stable. `V.2026.32.0.1` remains withdrawn because endpoint security blocked its copied update worker before the installer started.
 
 Full desktop releases use a Modern Installer `.exe` artifact because native host, tray, service, or bridge code changed. Modern installer artifacts are started by the helper in quiet mode.
 
