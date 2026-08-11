@@ -1,5 +1,20 @@
 # Changelog
 
+## V.2026.32.0.0 Main / Stable - 2026-08-11
+
+### Stable promotion
+
+- Promoted the verified V.2026.32.0.0 Beta artifact to production Stable after the observation period.
+- Reused the exact signed app-update and Full Setup artifact bytes, sizes, and SHA256 values.
+- Kept the existing Helper V.2026.29.2.2 unchanged for app-only updates; Full Setup remains the manual fallback.
+- Kept latest.json pinned to the permanent Safe Main landing release.
+
+### Validation
+
+- Stable and Beta point to the same 2026.32.0.0 release assets.
+- No rebuild was performed during promotion.
+
+
 ## V.2026.32.0.1 Main / Stable - 2026-08-06
 
 ### Withdrawn
