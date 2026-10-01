@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "appId": "ALTOVPN-WG",
   "channel": "beta",
-  "latestVersion": "V.2026.39.1.0",
-  "fileVersion": "2026.39.1.0",
+  "latestVersion": "V.2026.40.0.0",
+  "fileVersion": "2026.40.0.0",
   "minimumSupportedVersion": "V.2026.28.1.1",
-  "publishedAt": "2026-09-24T09:30:55.005339Z",
-  "releaseNotesUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/tag/v2026.39.1.0",
+  "publishedAt": "2026-10-01T04:12:10.362219Z",
+  "releaseNotesUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/tag/v2026.40.0.0",
   "manifestUrl": "https://api.github.com/repos/altoglobal-gif/ALTOVPN-WG-UPDATES/contents/beta.json?ref=beta",
   "changeSummary": [
-    "Unified installer Beta V.2026.39.1.0: one signed EXE serves clean install, in-app update, maintenance repair, and WireGuard recovery.",
+    "Unified installer Beta V.2026.40.0.0: one signed EXE serves clean install, in-app update, maintenance repair, and WireGuard recovery.",
     "The artifact keeps the historical -app-update.exe name, installer-exe type, and desktop-client component for existing updater generations.",
     "WebView2 Evergreen runtime is detected instead of embedding the standalone runtime, keeping the artifact size close to the previous Full Setup.",
     "The existing Helper V.2026.29.2.2 remains unchanged for the app-only update path.",
@@ -19,10 +19,10 @@
     "type": "installer-exe",
     "component": "desktop-client",
     "platform": "win-x64",
-    "fileName": "ALTOVPN-WG-V.2026.39.1.0-win-x64-app-update.exe",
-    "downloadUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/download/v2026.39.1.0/ALTOVPN-WG-V.2026.39.1.0-win-x64-app-update.exe",
-    "sha256": "337941869AFF5B0BF281AFB78DF5760B16455A46507F8DE1C00D8BF54F4FBAB1",
-    "sizeBytes": 178935176
+    "fileName": "ALTOVPN-WG-V.2026.40.0.0-win-x64-app-update.exe",
+    "downloadUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/download/v2026.40.0.0/ALTOVPN-WG-V.2026.40.0.0-win-x64-app-update.exe",
+    "sha256": "87F6B7FA02B3765B1719FDED19941DD9899C22CF527A239E48FF5E50EA24700A",
+    "sizeBytes": 179021704
   },
   "updatePolicy": {
     "requiresAdmin": false,
@@ -33,26 +33,26 @@
   },
   "source": {
     "repository": "altoglobal-gif/ALTOVPN-WG-UPDATES",
-    "tag": "v2026.39.1.0",
+    "tag": "v2026.40.0.0",
     "sourceRepository": "altoglobal-gif/ALTOVPN-WG",
-    "sourceCommit": "d08a346bea52616fb569b18ab4fd3f509f736673"
+    "sourceCommit": "0fc55f1715eab4b3033c5583b594001109b50456"
   },
   "fallbackArtifact": {
     "type": "installer-exe",
     "component": "desktop-client-helper-and-wireguard",
     "platform": "win-x64",
-    "fileName": "ALTOVPN-WG-V.2026.39.1.0-win-x64-app-update.exe",
-    "downloadUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/download/v2026.39.1.0/ALTOVPN-WG-V.2026.39.1.0-win-x64-app-update.exe",
-    "sha256": "337941869AFF5B0BF281AFB78DF5760B16455A46507F8DE1C00D8BF54F4FBAB1",
-    "sizeBytes": 178935176
+    "fileName": "ALTOVPN-WG-V.2026.40.0.0-win-x64-app-update.exe",
+    "downloadUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/download/v2026.40.0.0/ALTOVPN-WG-V.2026.40.0.0-win-x64-app-update.exe",
+    "sha256": "87F6B7FA02B3765B1719FDED19941DD9899C22CF527A239E48FF5E50EA24700A",
+    "sizeBytes": 179021704
   },
   "wireGuardInstallArtifact": {
     "type": "installer-exe",
     "component": "desktop-client",
     "platform": "win-x64",
-    "fileName": "ALTOVPN-WG-V.2026.39.1.0-win-x64-app-update.exe",
-    "downloadUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/download/v2026.39.1.0/ALTOVPN-WG-V.2026.39.1.0-win-x64-app-update.exe",
-    "sha256": "337941869AFF5B0BF281AFB78DF5760B16455A46507F8DE1C00D8BF54F4FBAB1",
-    "sizeBytes": 178935176
+    "fileName": "ALTOVPN-WG-V.2026.40.0.0-win-x64-app-update.exe",
+    "downloadUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/download/v2026.40.0.0/ALTOVPN-WG-V.2026.40.0.0-win-x64-app-update.exe",
+    "sha256": "87F6B7FA02B3765B1719FDED19941DD9899C22CF527A239E48FF5E50EA24700A",
+    "sizeBytes": 179021704
   }
 }
