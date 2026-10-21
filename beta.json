@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "appId": "ALTOVPN-WG",
   "channel": "beta",
-  "latestVersion": "V.2026.43.0.3",
-  "fileVersion": "2026.43.0.3",
+  "latestVersion": "V.2026.43.0.4",
+  "fileVersion": "2026.43.0.4",
   "minimumSupportedVersion": "V.2026.28.1.1",
-  "publishedAt": "2026-10-21T07:32:17.697792Z",
-  "releaseNotesUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/tag/v2026.43.0.3",
+  "publishedAt": "2026-10-21T08:47:21.830192Z",
+  "releaseNotesUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/tag/v2026.43.0.4",
   "manifestUrl": "https://api.github.com/repos/altoglobal-gif/ALTOVPN-WG-UPDATES/contents/beta.json?ref=beta",
   "changeSummary": [
-    "Unified installer Beta V.2026.43.0.3: one signed EXE serves clean install, in-app update, maintenance repair, and WireGuard recovery.",
+    "Unified installer Beta V.2026.43.0.4: one signed EXE serves clean install, in-app update, maintenance repair, and WireGuard recovery.",
     "The artifact keeps the historical -app-update.exe name, installer-exe type, and desktop-client component for existing updater generations.",
     "WebView2 Evergreen runtime is detected instead of embedding the standalone runtime, keeping the artifact size close to the previous Full Setup.",
     "Bundles Helper V.2026.29.2.3 for clean installs and maintenance recovery; the in-app update path leaves the installed helper untouched.",
@@ -19,10 +19,10 @@
     "type": "installer-exe",
     "component": "desktop-client",
     "platform": "win-x64",
-    "fileName": "ALTOVPN-WG-V.2026.43.0.3-win-x64-app-update.exe",
-    "downloadUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/download/v2026.43.0.3/ALTOVPN-WG-V.2026.43.0.3-win-x64-app-update.exe",
-    "sha256": "A891E1A995F9E20849E4363B3FBA7539E0F013E8D22C6A5A1A89EF8F3BCF8A6B",
-    "sizeBytes": 246278024
+    "fileName": "ALTOVPN-WG-V.2026.43.0.4-win-x64-app-update.exe",
+    "downloadUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/download/v2026.43.0.4/ALTOVPN-WG-V.2026.43.0.4-win-x64-app-update.exe",
+    "sha256": "88ED0D4A9431305BFB8A7F9AA75DA783CCCAC3BAE5FBE2C250CF89A80A792E4A",
+    "sizeBytes": 246277000
   },
   "updatePolicy": {
     "requiresAdmin": false,
@@ -33,26 +33,26 @@
   },
   "source": {
     "repository": "altoglobal-gif/ALTOVPN-WG-UPDATES",
-    "tag": "v2026.43.0.3",
+    "tag": "v2026.43.0.4",
     "sourceRepository": "altoglobal-gif/ALTOVPN-WG",
-    "sourceCommit": "950b989ab642be39b30a483a5d1faf245db5193c"
+    "sourceCommit": "2660974376ec8611398668b18d7252104181af37"
   },
   "fallbackArtifact": {
     "type": "installer-exe",
     "component": "desktop-client-helper-and-wireguard",
     "platform": "win-x64",
-    "fileName": "ALTOVPN-WG-V.2026.43.0.3-win-x64-app-update.exe",
-    "downloadUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/download/v2026.43.0.3/ALTOVPN-WG-V.2026.43.0.3-win-x64-app-update.exe",
-    "sha256": "A891E1A995F9E20849E4363B3FBA7539E0F013E8D22C6A5A1A89EF8F3BCF8A6B",
-    "sizeBytes": 246278024
+    "fileName": "ALTOVPN-WG-V.2026.43.0.4-win-x64-app-update.exe",
+    "downloadUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/download/v2026.43.0.4/ALTOVPN-WG-V.2026.43.0.4-win-x64-app-update.exe",
+    "sha256": "88ED0D4A9431305BFB8A7F9AA75DA783CCCAC3BAE5FBE2C250CF89A80A792E4A",
+    "sizeBytes": 246277000
   },
   "wireGuardInstallArtifact": {
     "type": "installer-exe",
     "component": "desktop-client",
     "platform": "win-x64",
-    "fileName": "ALTOVPN-WG-V.2026.43.0.3-win-x64-app-update.exe",
-    "downloadUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/download/v2026.43.0.3/ALTOVPN-WG-V.2026.43.0.3-win-x64-app-update.exe",
-    "sha256": "A891E1A995F9E20849E4363B3FBA7539E0F013E8D22C6A5A1A89EF8F3BCF8A6B",
-    "sizeBytes": 246278024
+    "fileName": "ALTOVPN-WG-V.2026.43.0.4-win-x64-app-update.exe",
+    "downloadUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/download/v2026.43.0.4/ALTOVPN-WG-V.2026.43.0.4-win-x64-app-update.exe",
+    "sha256": "88ED0D4A9431305BFB8A7F9AA75DA783CCCAC3BAE5FBE2C250CF89A80A792E4A",
+    "sizeBytes": 246277000
   }
 }
