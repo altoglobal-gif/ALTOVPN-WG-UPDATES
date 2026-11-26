@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "appId": "ALTOVPN-WG",
   "channel": "beta",
-  "latestVersion": "V.2026.48.1.2",
-  "fileVersion": "2026.48.1.2",
+  "latestVersion": "V.2026.48.1.3",
+  "fileVersion": "2026.48.1.3",
   "minimumSupportedVersion": "V.2026.28.1.1",
-  "publishedAt": "2026-11-26T04:49:02.337884Z",
-  "releaseNotesUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/tag/v2026.48.1.2",
+  "publishedAt": "2026-11-26T06:59:30.263471Z",
+  "releaseNotesUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/tag/v2026.48.1.3",
   "manifestUrl": "https://api.github.com/repos/altoglobal-gif/ALTOVPN-WG-UPDATES/contents/beta.json?ref=beta",
   "changeSummary": [
-    "Beta V.2026.48.1.2: in-app update ships a lean app-only artifact; clean installs use the full setup EXE.",
+    "Beta V.2026.48.1.3: in-app update ships a lean app-only artifact; clean installs use the full setup EXE.",
     "The app-update artifact keeps the historical -app-update.exe name, installer-exe type, and desktop-client component for existing updater generations.",
     "Bundles Helper V.2026.29.2.3 only in the full setup; the in-app update path leaves the installed helper untouched.",
     "Promotion must reuse these exact artifact bytes and SHA256 values."
@@ -18,10 +18,10 @@
     "type": "installer-exe",
     "component": "desktop-client",
     "platform": "win-x64",
-    "fileName": "ALTOVPN-WG-V.2026.48.1.2-win-x64-app-update.exe",
-    "downloadUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/download/v2026.48.1.2-appupdate/ALTOVPN-WG-V.2026.48.1.2-win-x64-app-update.exe",
-    "sha256": "7AC6C62E74E46DAD7EAD23BFF56951D450BEB002D59A5CF604F6E6DB061AD82B",
-    "sizeBytes": 213353000
+    "fileName": "ALTOVPN-WG-V.2026.48.1.3-win-x64-app-update.exe",
+    "downloadUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/download/v2026.48.1.3-appupdate/ALTOVPN-WG-V.2026.48.1.3-win-x64-app-update.exe",
+    "sha256": "BDF36D89E6A7C364F2E565C453F13DD0BE3CCA5FDEE8D633E3D54D14619FA2F5",
+    "sizeBytes": 213354024
   },
   "updatePolicy": {
     "requiresAdmin": false,
@@ -32,26 +32,26 @@
   },
   "source": {
     "repository": "altoglobal-gif/ALTOVPN-WG-UPDATES",
-    "tag": "v2026.48.1.2",
+    "tag": "v2026.48.1.3",
     "sourceRepository": "altoglobal-gif/ALTOVPN-WG",
-    "sourceCommit": "b48f669e4c7502383135c32f7e2c2c61e8b00d48"
+    "sourceCommit": "c6cadc3b0f69f04f37d04216f74254cf5bac93fb"
   },
   "fallbackArtifact": {
     "type": "installer-exe",
     "component": "desktop-client-helper-and-wireguard",
     "platform": "win-x64",
-    "fileName": "ALTOVPN-WG-V.2026.48.1.2-win-x64-setup.exe",
-    "downloadUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/download/v2026.48.1.2/ALTOVPN-WG-V.2026.48.1.2-win-x64-setup.exe",
-    "sha256": "2B1BFA58613F921FC57B0F5FF0CB21AA47F36B59098CA26D474F525889EEBCF1",
-    "sizeBytes": 246357032
+    "fileName": "ALTOVPN-WG-V.2026.48.1.3-win-x64-setup.exe",
+    "downloadUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/download/v2026.48.1.3/ALTOVPN-WG-V.2026.48.1.3-win-x64-setup.exe",
+    "sha256": "5AFD06CA214B132637E3BA6E753B28CE2E94AF82E49F82348BD792F537B51C68",
+    "sizeBytes": 246358056
   },
   "wireGuardInstallArtifact": {
     "type": "installer-exe",
     "component": "desktop-client-helper-and-wireguard",
     "platform": "win-x64",
-    "fileName": "ALTOVPN-WG-V.2026.48.1.2-win-x64-setup.exe",
-    "downloadUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/download/v2026.48.1.2/ALTOVPN-WG-V.2026.48.1.2-win-x64-setup.exe",
-    "sha256": "2B1BFA58613F921FC57B0F5FF0CB21AA47F36B59098CA26D474F525889EEBCF1",
-    "sizeBytes": 246357032
+    "fileName": "ALTOVPN-WG-V.2026.48.1.3-win-x64-setup.exe",
+    "downloadUrl": "https://github.com/altoglobal-gif/ALTOVPN-WG-UPDATES/releases/download/v2026.48.1.3/ALTOVPN-WG-V.2026.48.1.3-win-x64-setup.exe",
+    "sha256": "5AFD06CA214B132637E3BA6E753B28CE2E94AF82E49F82348BD792F537B51C68",
+    "sizeBytes": 246358056
   }
 }
